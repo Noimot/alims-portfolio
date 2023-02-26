@@ -11,8 +11,12 @@ const Home = () => {
         </div>
         <div>
           <ul className="flex items-center justify-between gap-88 capitalize">
-            <li>about me</li>
-            <li>my portfolio</li>
+            <li>
+              <a href="#about-me">about me</a>{" "}
+            </li>
+            <li>
+              <a href="#portfolio">my portfolio</a>{" "}
+            </li>
             <li>my cv</li>
           </ul>
         </div>
@@ -22,7 +26,7 @@ const Home = () => {
           </span>
           <span>
             <button className="rounded-md border border-solid border-orange-1 text-orange-1 px-5 py-1.5 capitalize">
-              contact me
+              <a href="#contact">contact me</a>
             </button>
           </span>
         </div>

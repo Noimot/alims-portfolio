@@ -2,12 +2,14 @@ import React from "react";
 import starImage from "../assets/images/star.svg";
 import blockImage from "../assets/images/block-image.svg";
 import path from "../assets/images/path.svg";
+import blurryImage from "../assets/images/blurry-image.svg";
+import quotesImage from "../assets/images/quotes-image.svg";
 
 const OtherWorks = () => {
   return (
     <section className="w-full px-135 pt-120">
       <div className="text-center">
-        <h1 className="tracking-3 uppercase text-orange-1">portfolio</h1>
+        <h1 className="tracking-3 uppercase text-orange-1 text-base leading-8 font-normal">portfolio</h1>
         <h2 className="capitalize text-brown -tracking-1 text-56 font-extrabold leading-64 pt-5">
           other works
         </h2>
@@ -127,12 +129,47 @@ const OtherWorks = () => {
           <img src={starImage} alt="" />
         </div>
         <div className="flex flex-col gap-y-13">
-          <h1 className="text-orange-1 uppercase tracking-3 font-semibold leading-8 text-base">connect with me</h1>
-          <p className="text-grey-2 font-bold leading-8 text-2xl">I Help Product Ideas Move Faster</p>
-<div className="pt-[10px]">          <button className="uppercase text-white bg-orange-1 rounded-md w-154 h-48">contact me</button>
-</div>        </div>
-        <div><img src={blockImage} alt="" /></div>
-        <div><img src={path} alt="" /></div>
+          <h1 className="text-orange-1 uppercase tracking-3 font-semibold leading-8 text-base">
+            connect with me
+          </h1>
+          <p className="text-grey-2 font-bold leading-8 text-2xl">
+            I Help Product Ideas Move Faster
+          </p>
+          <div className="pt-[10px]">
+            {" "}
+            <button className="uppercase text-white bg-orange-1 rounded-md w-154 h-48">
+             <a href="#contact">contact me</a> 
+            </button>
+          </div>{" "}
+        </div>
+        <div>
+          <img src={blockImage} alt="" />
+        </div>
+        <div>
+          <img src={path} alt="" />
+        </div>
+      </div>
+      <div className="w-full mt-[200px] flex items-center gap-x-72 pb-[120px]">
+        <div className="flex-[0.5]">
+          <img src={blurryImage} alt="" />
+        </div>
+        <div className="relative flex-[0.5] flex flex-col gap-y-23">
+          <div className="absolute top-0 right-0">
+            <img src={quotesImage} alt="" />
+          </div>
+          <h1 className="text-orange-1 uppercase tracking-3 font-normal leading-8 text-base">
+            words
+          </h1>
+          <p className="text-brown text-3xl font-semibold leading-44">
+            The main tenet of design thinking is empathy for the people you’re
+            trying to design for. Leadership is exactly the same thing –
+            building empathy for the people that you’re entrusted to help.
+          </p>
+          <div>
+            <p className="text-brown text-base leading-8">– David Kelley</p>
+            <p className="text-dark-1 text-sm leading-6 font-light">Founder of IDEO</p>
+          </div>
+        </div>
       </div>
     </section>
   );

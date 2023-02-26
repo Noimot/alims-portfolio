@@ -8,7 +8,7 @@ import profile from "../assets/images/profile-pic.svg";
 
 const AboutMe = () => {
   return (
-    <div className="w-full bg-light-yellow px-135">
+    <div className="w-full bg-light-yellow px-135" id="about-me">
       <div className="flex items-center justify-between py-81 border-b border-solid border-light-yellow2">
         <div className="flex items-center gap-x-[3px]">
           <span>
@@ -73,7 +73,7 @@ const AboutMe = () => {
               <a href="#">View CV </a>
             </button>
             <button type="button" className="inline-block border border-solid border-orange-1 rounded-md w-138 h-48 text-orange-1 text-base leading-4 font-medium capitalize">
-              <a href="#">How I Work</a>
+              <a href="#how-i-work">How I Work</a>
             </button>
           </div>
         </aside>

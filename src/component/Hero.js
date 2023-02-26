@@ -6,7 +6,6 @@ import loaderIcon from "../assets/images/loader-icon.svg";
 import pencilIcon from "../assets/images/pencil.svg";
 import toolsIcon from "../assets/images/tools-pic.svg";
 
-
 const HeroPage = () => {
   return (
     <div className="w-full px-135 flex justify-between items-center h-auto py-110 gap-x-5">
@@ -29,7 +28,7 @@ const HeroPage = () => {
             type="button"
             className="bg-orange-1 text-white uppercase font-bold text-sm rounded-md w-154 h-12"
           >
-            contact me
+            <a href="#contact">contact me</a>
           </button>
         </div>
       </div>

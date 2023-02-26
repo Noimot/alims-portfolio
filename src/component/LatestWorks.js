@@ -11,7 +11,7 @@ import realproImage from "../assets/images/realpro-image.svg";
 
 const LatestWorks = () => {
   return (
-    <main className="w-full">
+    <main className="w-full" id="portfolio">
       <section className="bg-blue-1 w-full py-120 px-135">
         <div className="w-full text-center">
           <h1 className="tracking-3 uppercase text-orange-1">portfolio</h1>
