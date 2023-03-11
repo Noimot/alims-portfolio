@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import mapPin from "../assets/images/map-pin.svg";
 import map from "../assets/images/map.svg";
 import phoneIcon from "../assets/images/phone-icon.svg";
 import emailIcon from "../assets/images/email-icon.svg";
 import addressIcon from "../assets/images/address-icon.svg";
 import contactIcon from "../assets/images/contact-shapes.svg";
+import { send } from "emailjs-com";
 
 const Map = () => {
+  const [contactInfo, setContactInfo] = useState({
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const handleChange = (event) => {
+    setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    send("service_951m9m3", "template_3wccxy8", contactInfo, "JC9EXZzoPBk262rG0")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+      setContactInfo({ ...contactInfo, email : "", address: "", subject: ""} )
+  };
   return (
     <div className="w-full pt-121" id="contact">
       <div className="w-full h-screen bg-map bg-center bg-no-repeat bg-cover relative pl-135 flex items-center">
@@ -17,34 +37,43 @@ const Map = () => {
           <h1 className="text-brown text-2xl leading-8 font-bold">
             Drop by, love to hear from you!
           </h1>
-          <form className="pt-23">
+          <form className="pt-23" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-y-4">
-              <div className="w-full h-48 rounded-md border border-solid border-orange-1 px-4 pt-9">
+              <div className="w-full h-48 rounded-md border border-solid border-orange-1 ">
                 <input
                   type="text"
+                  name="email"
+                  value={contactIcon.email}
+                  onChange={handleChange}
                   placeholder="Your email"
-                  className="w-full h-full placeholder:text-brown placeholder:text-opacity-30"
+                  className="w-full h-full placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-orange-1"
                 />
               </div>
-              <div className="w-full h-48 rounded-md border border-solid border-orange-1 px-4 pt-9">
+              <div className="w-full h-48 rounded-md border border-solid border-orange-1">
                 <input
                   type="text"
+                  name="subject"
+                  value={contactIcon.subject}
+                  onChange={handleChange}
                   placeholder="Subject"
-                  className="w-full h-full placeholder:text-brown placeholder:text-opacity-30"
+                  className="w-full h-full placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-orange-1"
                 />
               </div>
-              <div className="w-full h-[96px] rounded-md border border-solid border-orange-1 px-4 pt-9">
+              <div className="w-full h-[96px] rounded-md border border-solid border-orange-1">
                 <textarea
                   name="message"
-                  id=""
+                  value={contactIcon.message}
+                  onChange={handleChange}
                   placeholder="Message"
-                  className="w-full h-full resize-none placeholder:text-brown placeholder:text-opacity-30"
+                  className="w-full h-full resize-none placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-orange-1"
                 ></textarea>
               </div>
             </div>
             <div className="pt-9 flex justify-end">
-              <button className="w-154 h-48 rounded-md text-white bg-orange-1">
-                {" "}
+              <button
+                className="w-154 h-48 rounded-md text-white bg-orange-1"
+                type="submit"
+              >
                 Submit
               </button>
             </div>{" "}

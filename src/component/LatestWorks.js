@@ -64,10 +64,10 @@ const LatestWorks = () => {
             </p>
             <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
               <a
-                href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio-snippets?page-id=19:9839&amp;node-id=20:15159&amp;viewport=241,48,0.04&amp;scaling=min-zoom&amp;starting-point-node-id=20:15159"
+                href="https://faramove.com/"
                 target="_blank"
               >
-                view snippets
+                view site
               </a>
             </button>
           </aside>
@@ -88,10 +88,10 @@ const LatestWorks = () => {
             </p>
             <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
               <a
-                href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio-snippets?page-id=19:9839&amp;node-id=20:15159&amp;viewport=241,48,0.04&amp;scaling=min-zoom&amp;starting-point-node-id=20:15159"
+                href="https://zepta-landing.netlify.app/"
                 target="_blank"
               >
-                view snippets
+                view site
               </a>
             </button>
           </aside>
@@ -120,7 +120,7 @@ const LatestWorks = () => {
           </p>
           <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
             <a
-              href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=21%3A24033&node-id=21%3A25767&viewport=241%2C48%2C0.06&scaling=min-zoom&starting-point-node-id=21%3A26243"
+              href="https://bit.ly/3mtveDC"
               target="_blank"
             >
               view snippets
@@ -144,7 +144,7 @@ const LatestWorks = () => {
           </p>
           <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
             <a
-              href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=21%3A24033&node-id=21%3A25767&viewport=241%2C48%2C0.06&scaling=min-zoom&starting-point-node-id=21%3A26243"
+              href="https://bit.ly/3ydjlo5"
               target="_blank"
             >
               view snippets
@@ -197,7 +197,7 @@ const LatestWorks = () => {
           </p>
           <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
             <a
-              href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=19%3A9839&amp%3Bnode-id=20%3A15159&amp%3Bviewport=241%2C48%2C0.04&amp%3Bscaling=min-zoom&amp%3Bstarting-point-node-id=20%3A15159&node-id=1%3A33331&starting-point-node-id=1%3A33331"
+              href="https://bit.ly/41QUgg1"
               target="_blank"
             >
               view snippets
