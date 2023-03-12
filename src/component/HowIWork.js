@@ -1,4 +1,5 @@
 import React from "react";
+import AnimationEffect from "./AnimationEffect";
 
 const HowIWork = () => {
   return (
@@ -36,30 +37,36 @@ const HowIWork = () => {
           </p>
         </aside>
         <aside className="flex-[0.5] pt-190 flex flex-col gap-y-80">
-          <div className="flex items-center gap-x-51">
-            <span className="text-6xl leading-80 text-brown font-extrabold -tracking-2">
-              1
-            </span>
-            <p className="text-brown font-bold leading-8 text-sm">
-              Understanding user needs/pains via research.
-            </p>
-          </div>
-          <div className="flex items-center gap-x-51">
-            <span className="text-6xl leading-80 text-brown font-extrabold -tracking-2">
-              2
-            </span>
-            <p className="text-brown font-bold leading-8 text-sm">
-              Technical analysis of problem and presentation.
-            </p>
-          </div>
-          <div className="flex items-center gap-x-51">
-            <span className="text-6xl leading-80 text-brown font-extrabold -tracking-2">
-              3
-            </span>
-            <p className="text-brown font-bold leading-8 text-sm">
-              Solving of problem via interface design.
-            </p>
-          </div>
+          <AnimationEffect>
+            <div className="flex items-center gap-x-51">
+              <span className="text-6xl leading-80 text-brown font-extrabold -tracking-2">
+                1
+              </span>
+              <p className="text-brown font-bold leading-8 text-sm">
+                Understanding user needs/pains via research.
+              </p>
+            </div>
+          </AnimationEffect>
+          <AnimationEffect>
+            <div className="flex items-center gap-x-51">
+              <span className="text-6xl leading-80 text-brown font-extrabold -tracking-2">
+                2
+              </span>
+              <p className="text-brown font-bold leading-8 text-sm">
+                Technical analysis of problem and presentation.
+              </p>
+            </div>
+          </AnimationEffect>
+          <AnimationEffect>
+            <div className="flex items-center gap-x-51">
+              <span className="text-6xl leading-80 text-brown font-extrabold -tracking-2">
+                3
+              </span>
+              <p className="text-brown font-bold leading-8 text-sm">
+                Solving of problem via interface design.
+              </p>
+            </div>
+          </AnimationEffect>
         </aside>
       </div>
     </div>

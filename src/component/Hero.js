@@ -5,6 +5,7 @@ import starIcon from "../assets/images/star-icon.svg";
 import loaderIcon from "../assets/images/loader-icon.svg";
 import pencilIcon from "../assets/images/pencil.svg";
 import toolsIcon from "../assets/images/tools-pic.svg";
+import designingTool from "../assets/images/designing-tools.gif";
 
 const HeroPage = () => {
   return (
@@ -43,8 +44,8 @@ const HeroPage = () => {
           <span className="absolute right-12 top-52">
             <img src={combinedStrings} alt="" />
           </span>
-          <span className="absolute right-36 bottom-8">
-            <img src={pencilIcon} alt="" />
+          <span className="absolute right-36 bottom-8 inline-block w-[307px] h-[308px]">
+            <img src={designingTool} alt="" className="-rotate-90" />
           </span>
           <span className="absolute -left-16 bottom-2 -z-10">
             <img src={loaderIcon} alt="" />
