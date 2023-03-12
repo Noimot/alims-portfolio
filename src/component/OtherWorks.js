@@ -137,7 +137,7 @@ const OtherWorks = () => {
           </p>
           <div className="pt-[10px]">
             {" "}
-            <button className="uppercase text-white bg-orange-1 rounded-md w-154 h-48">
+            <button className="uppercase text-white bg-orange-1 rounded-md w-154 h-48 hover:bg-orange-3">
              <a href="#contact">contact me</a> 
             </button>
           </div>{" "}

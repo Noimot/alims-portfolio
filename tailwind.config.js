@@ -34,6 +34,8 @@ module.exports = {
       colors: {
         "orange-1": "#EF6D58;",
         "orange-2": "rgba(255, 255, 255, 0.295743);",
+        "light-orange": "#fff6f1;",
+        "orange-3": "#D95C48",
         "dark-1": "#1A1C1D",
         "dark-2": "#32334c",
         "dark-3": "#000049",
@@ -44,7 +46,6 @@ module.exports = {
         "light-yellow2": "#F3D1BF",
         "light-yellow3": "#FFF0EE",
         "light-yellow4": "#FFFcfb",
-        "light-yellow5": "#F3D1BF",
         "purple-1": "#5A00EF",
         "blue-1": "#0075FA",
         "grey-1": "#fcfcfc",

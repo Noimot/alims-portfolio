@@ -2,7 +2,7 @@ import React from "react";
 import headerIcon from "../assets/images/header-logo.svg";
 import moonIcon from "../assets/images/moon-icon.svg";
 
-const Home = () => {
+const Header = () => {
   return (
     <div className="w-full font-epilogue shadow-3xl">
       <header className="w-full h-88 px-135 flex items-center justify-between">
@@ -25,7 +25,7 @@ const Home = () => {
             <img src={moonIcon} alt="" />
           </span>
           <span>
-            <button className="rounded-md border border-solid border-orange-1 text-orange-1 px-5 py-1.5 capitalize">
+            <button className="rounded-md border border-solid border-orange-1 text-orange-1 px-5 py-1.5 capitalize hover:bg-light-orange transition ease-in-out delay-150 hover:-translate-1">
               <a href="#contact">contact me</a>
             </button>
           </span>
@@ -35,4 +35,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Header;

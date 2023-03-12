@@ -69,12 +69,12 @@ const AboutMe = () => {
             </p>
           </div>
           <div className="flex items-center gap-x-6 pt-15">
-            <button type="button" className="inline-block bg-orange-1 text-white font-semibold text-sm leading-4 rounded-md w-154 h-48">
+            <button type="button" className="inline-block bg-orange-1 text-white font-semibold text-sm leading-4 rounded-md w-154 h-48 hover:bg-orange-3">
               <a href="#">View CV </a>
             </button>
-            <button type="button" className="inline-block border border-solid border-orange-1 rounded-md w-138 h-48 text-orange-1 text-base leading-4 font-medium capitalize">
+            {/* <button type="button" className="inline-block border border-solid border-orange-1 rounded-md w-138 h-48 text-orange-1 text-base leading-4 font-medium capitalize">
               <a href="#how-i-work">How I Work</a>
-            </button>
+            </button> */}
           </div>
         </aside>
       </div>

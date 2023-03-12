@@ -18,14 +18,19 @@ const Map = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    send("service_951m9m3", "template_3wccxy8", contactInfo, "JC9EXZzoPBk262rG0")
+    send(
+      "service_951m9m3",
+      "template_3wccxy8",
+      contactInfo,
+      "JC9EXZzoPBk262rG0"
+    )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
       })
       .catch((err) => {
         console.log("FAILED...", err);
       });
-      setContactInfo({ ...contactInfo, email : "", address: "", subject: ""} )
+    setContactInfo({ ...contactInfo, email: "", address: "", subject: "" });
   };
   return (
     <div className="w-full pt-121" id="contact">
@@ -37,13 +42,19 @@ const Map = () => {
           <h1 className="text-brown text-2xl leading-8 font-bold">
             Drop by, love to hear from you!
           </h1>
-          <form className="pt-23" onSubmit={handleSubmit}>
+          <form
+            className="pt-23"
+            // action={`mailto:abdulalimajenifuja@gmail.com?subject=${contactInfo.subject}&body=${contactInfo.message}`}
+            // method="get"
+            // enctype="text/plain"
+            onSubmit={handleSubmit}
+          >
             <div className="flex flex-col gap-y-4">
               <div className="w-full h-48 rounded-md border border-solid border-orange-1 ">
                 <input
                   type="text"
                   name="email"
-                  value={contactIcon.email}
+                  value={contactInfo.email}
                   onChange={handleChange}
                   placeholder="Your email"
                   className="w-full h-full placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-orange-1"
@@ -53,7 +64,7 @@ const Map = () => {
                 <input
                   type="text"
                   name="subject"
-                  value={contactIcon.subject}
+                  value={contactInfo.subject}
                   onChange={handleChange}
                   placeholder="Subject"
                   className="w-full h-full placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-orange-1"
@@ -71,7 +82,7 @@ const Map = () => {
             </div>
             <div className="pt-9 flex justify-end">
               <button
-                className="w-154 h-48 rounded-md text-white bg-orange-1"
+                className="w-154 h-48 rounded-md text-white bg-orange-1 hover:bg-orange-3"
                 type="submit"
               >
                 Submit
@@ -81,7 +92,7 @@ const Map = () => {
         </div>
       </div>
       <div className="w-full px-135 grid grid-cols-3 py-120">
-        <div className="border border-solid border-light-yellow2 rounded-tl-md rounded-bl-md flex flex-col gap-y-[26px] pl-12 py-8">
+        <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 rounded-tl-md rounded-bl-md flex flex-col gap-y-[26px] pl-12 py-8">
           <div className="flex items-center gap-x-6">
             <span className="flex items-center justify-center w-16 h-16 bg-orange-1 rounded-full">
               <img src={phoneIcon} alt="" />
@@ -92,7 +103,7 @@ const Map = () => {
           </div>
           <p className="text-brown leading-8 text-xl">(+234) 81-612-1289-000</p>
         </div>
-        <div className="bg-light-yellow5 border border-solid border-light-yellow2 flex flex-col gap-y-[26px] pl-12 py-8">
+        <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 flex flex-col gap-y-[26px] pl-12 py-8">
           <div className="flex items-center gap-x-6">
             <span className="flex items-center justify-center w-16 h-16 bg-orange-1 rounded-full">
               <img src={emailIcon} alt="" />
@@ -105,7 +116,7 @@ const Map = () => {
             Abdulalimajenifuja@gmail.com
           </p>
         </div>
-        <div className="border border-solid border-light-yellow2 rounded-tr-md rounded-br-md flex flex-col gap-y-[26px] pl-12 py-8">
+        <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 rounded-tr-md rounded-br-md flex flex-col gap-y-[26px] pl-12 py-8">
           <div className="flex items-center gap-x-6">
             <span className="flex items-center justify-center w-16 h-16 bg-orange-1 rounded-full">
               <img src={addressIcon} alt="" />

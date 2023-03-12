@@ -20,7 +20,7 @@ const Testimonials = () => {
       </div>
       <div className="w-full flex pt-60">
         <div>
-          <div className="p-12 shadow-4xl rounded-tl-md border border-solid border-light-yellow2">
+          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-tl-md border border-solid border-light-yellow2">
             <StarRating />
             <div className="pt-9">
               <p className="text-brown text-base font-normal leading-8">
@@ -47,7 +47,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="p-12 shadow-4xl rounded-b-md border border-solid border-light-yellow2">
+          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-b-md border border-solid border-light-yellow2">
             <StarRating />
             <div className="pt-9">
               <p className="text-brown text-base font-normal leading-8">
@@ -72,7 +72,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div>
-          <div className="p-12 shadow-4xl rounded-tr-md border border-solid border-light-yellow2">
+          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-tr-md border border-solid border-light-yellow2">
             <StarRating />
             <div className="pt-9">
               <p className="text-brown text-base font-normal leading-8">
@@ -95,7 +95,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="p-12 shadow-4xl rounded-br-md border border-solid border-light-yellow2">
+          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-br-md border border-solid border-light-yellow2">
             <StarRating />
             <div className="pt-9">
               <p className="text-brown text-base font-normal leading-8">
@@ -122,7 +122,7 @@ const Testimonials = () => {
         </div>
       </div>
       <div className="text-center pt-65">
-        <button className="w-138 h-48 uppercase text-white bg-orange-1 text-sm leading-14 font-black shadow-5xl rounded-md">
+        <button className="w-138 h-48 uppercase text-white bg-orange-1 text-sm leading-14 font-black shadow-5xl rounded-md hover:bg-orange-3">
           <a href="https://www.linkedin.com/in/abdulalim-ajenifuja-8652a8179/" target="_blank">
             View More
           </a>

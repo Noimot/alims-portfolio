@@ -1,6 +1,6 @@
 import AboutMe from './component/AboutMe';
 import HeroPage from './component/Hero';
-import Home from './component/Home';
+import Home from './component/Header';
 import HowIWork from './component/HowIWork';
 import LatestWorks from './component/LatestWorks';
 import Map from './component/Contact';

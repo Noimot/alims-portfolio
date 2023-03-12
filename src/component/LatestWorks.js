@@ -33,7 +33,7 @@ const LatestWorks = () => {
               Designed to simplify the complex operation of admins, merchants
               and riders interelating at the same time.
             </p>
-            <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
+            <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
               <a href="https://www.jeetar.com/" target="_blank">
                 view site
               </a>
@@ -44,7 +44,7 @@ const LatestWorks = () => {
           </aside>
         </div>
       </section>
-      <section className="w-full py-124 px-135 flex flex-col gap-y-244">
+      <section className="w-full bg-light-yellow4 py-124 px-135 flex flex-col gap-y-244">
         <div className="w-full flex items-center gap-x-24">
           <aside className="flex-[0.5]">
             <img src={faramoveImage} alt="" />
@@ -62,7 +62,7 @@ const LatestWorks = () => {
               product that uses bikes, vans and truck hire for light or heavy
               moveables, locally, nationally and internationally.
             </p>
-            <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
+            <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
               <a
                 href="https://faramove.com/"
                 target="_blank"
@@ -86,7 +86,7 @@ const LatestWorks = () => {
               their products effectively via social media channels and earn
               money from single and group purchases.
             </p>
-            <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
+            <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
               <a
                 href="https://zepta-landing.netlify.app/"
                 target="_blank"
@@ -118,7 +118,7 @@ const LatestWorks = () => {
             classic home services such as plumbing, house cleaning, packing and
             movement, electric works, and more
           </p>
-          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
+          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
             <a
               href="https://bit.ly/3mtveDC"
               target="_blank"
@@ -142,7 +142,7 @@ const LatestWorks = () => {
             university courses and professionals, delivering video courses,
             texts and other resources for all.
           </p>
-          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
+          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
             <a
               href="https://bit.ly/3ydjlo5"
               target="_blank"
@@ -172,7 +172,7 @@ const LatestWorks = () => {
             preferences and rights towards establishment of a desirable
             collective change.
           </p>
-          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
+          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
             <a
               href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=21%3A24033&node-id=21%3A25767&viewport=241%2C48%2C0.06&scaling=min-zoom&starting-point-node-id=21%3A26243"
               target="_blank"
@@ -195,7 +195,7 @@ const LatestWorks = () => {
             media daily challenge, live movies watching, ecommerce marketplace
             to create an all-time experience like no other.
           </p>
-          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
+          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
             <a
               href="https://bit.ly/41QUgg1"
               target="_blank"
@@ -224,7 +224,7 @@ const LatestWorks = () => {
             business owners and browsers interested in immovable property, and
             collect content in the form of advertisements from private sellers.
           </p>
-          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize">
+          <button className="w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
             <a
               href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=19%3A9839&amp%3Bnode-id=20%3A15159&amp%3Bviewport=241%2C48%2C0.04&amp%3Bscaling=min-zoom&amp%3Bstarting-point-node-id=20%3A15159&node-id=1%3A33331&starting-point-node-id=1%3A33331"
               target="_blank"

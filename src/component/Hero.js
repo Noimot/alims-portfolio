@@ -26,14 +26,14 @@ const HeroPage = () => {
         <div className="pt-12">
           <button
             type="button"
-            className="bg-orange-1 text-white uppercase font-bold text-sm rounded-md w-154 h-12"
+            className="bg-orange-1 text-white uppercase font-bold text-sm rounded-md w-154 h-12 hover:bg-orange-3"
           >
             <a href="#contact">contact me</a>
           </button>
         </div>
       </div>
       <div className="flex-[0.5]">
-        {/* <div className="w-568 h-572 rounded-full bg-light-yellow3 relative">
+        <div className="w-568 h-572 rounded-full bg-light-yellow3 relative">
           <span className="absolute right-36 top-20">
             <img src={starIcon} alt="" />
           </span>
@@ -52,8 +52,8 @@ const HeroPage = () => {
           <span className="absolute -left-9 -bottom-5">
             <img src={loaderIcon} alt="" />
           </span>
-        </div> */}
-        <img src={toolsIcon} alt="" />
+        </div>
+        {/* <img src={toolsIcon} alt="" /> */}
       </div>
     </div>
   );
