@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import starImage from "../assets/images/star.svg";
 import blockImage from "../assets/images/block-image.svg";
 import path from "../assets/images/path.svg";
@@ -6,19 +6,47 @@ import blurryImage from "../assets/images/blurry-image.svg";
 import quotesImage from "../assets/images/quotes-image.svg";
 
 const OtherWorks = () => {
+  const intrepidRef = useRef();
+  const sebigiftRef = useRef();
+  const odiopayRef = useRef();
+  const secureshopRef = useRef();
+  const smsporteRef = useRef();
+  const handleMouseHover = (ref) => {
+    ref.current.style.zIndex = 999;
+  };
+  const handleMouseLeave = (ref) => {
+    ref.current.style.zIndex = -1;
+  };
+
+  useEffect(() => {
+    intrepidRef.current.style.zIndex = -1;
+    sebigiftRef.current.style.zIndex = -1;
+    odiopayRef.current.style.zIndex = -1;
+    secureshopRef.current.style.zIndex = -1;
+    smsporteRef.current.style.zIndex = -1;
+  });
   return (
     <section className="w-full px-135 pt-120">
       <div className="text-center">
-        <h1 className="tracking-3 uppercase text-orange-1 text-base leading-8 font-normal">portfolio</h1>
+        <h1 className="tracking-3 uppercase text-orange-1 text-base leading-8 font-normal">
+          portfolio
+        </h1>
         <h2 className="capitalize text-brown -tracking-1 text-56 font-extrabold leading-64 pt-5">
           other works
         </h2>
       </div>
       <div className="pt-16 bg-white flex flex-col gap-y-8">
         <div className="w-full flex items-center gap-x-7">
-          <div className="bg-intrepid-image flex-[0.4] h-416 relative bg-center bg-no-repeat bg-cover">
-            <div className="absolute bg-pink-1 w-full h-416 bg-opacity-[0.32] flex flex-col justify-end rounded-md">
-              <div className="pl-46 pb-42 flex flex-col gap-y-[14px]">
+          <div
+            className="bg-intrepid-image flex-[0.4] h-416 relative bg-center bg-no-repeat bg-cover"
+            onMouseEnter={() => handleMouseHover(intrepidRef)}
+            onMouseLeave={() => handleMouseLeave(intrepidRef)}
+          >
+            <div className="absolute hover:bg-pink-1 w-full h-416 hover:bg-opacity-[0.32] flex flex-col justify-end rounded-md">
+              <div
+                className="pl-46 pb-42 flex flex-col gap-y-[14px]"
+                ref={intrepidRef}
+              >
                 <p className="text-white text-40 leading-48 capitalize">
                   intrepid
                 </p>
@@ -33,9 +61,16 @@ const OtherWorks = () => {
               </div>
             </div>
           </div>
-          <div className="flex-[0.6] h-416 relative bg-sebigift-image bg-center bg-no-repeat bg-cover">
-            <div className="absolute bg-pink-1 w-full h-416 bg-opacity-[0.32] flex flex-col justify-end rounded-md">
-              <div className="pl-46 pb-42 flex flex-col gap-y-[14px]">
+          <div
+            className="flex-[0.6] h-416 relative bg-sebigift-image bg-center bg-no-repeat bg-cover"
+            onMouseEnter={() => handleMouseHover(sebigiftRef)}
+            onMouseLeave={() => handleMouseLeave(sebigiftRef)}
+          >
+            <div className="absolute hover:bg-pink-1 w-full h-416 hover:bg-opacity-[0.32] flex flex-col justify-end rounded-md">
+              <div
+                className="pl-46 pb-42 flex flex-col gap-y-[14px]"
+                ref={sebigiftRef}
+              >
                 <p className="text-white text-40 leading-48 capitalize">
                   sebigift
                 </p>
@@ -52,9 +87,16 @@ const OtherWorks = () => {
           </div>
         </div>
         <div className="w-full flex items-center gap-x-7">
-          <div className="bg-odiopay-image flex-[0.6] h-416 relative bg-center bg-no-repeat bg-cover">
-            <div className="absolute bg-pink-1 w-full h-416 bg-opacity-[0.32] flex flex-col justify-end rounded-md">
-              <div className="pl-46 pb-42 flex flex-col gap-y-[14px]">
+          <div
+            className="bg-odiopay-image flex-[0.6] h-416 relative bg-center bg-no-repeat bg-cover"
+            onMouseEnter={() => handleMouseHover(odiopayRef)}
+            onMouseLeave={() => handleMouseLeave(odiopayRef)}
+          >
+            <div className="absolute hover:bg-pink-1 w-full h-416 hover:bg-opacity-[0.32] flex flex-col justify-end rounded-md">
+              <div
+                className="pl-46 pb-42 flex flex-col gap-y-[14px]"
+                ref={odiopayRef}
+              >
                 <p className="text-white text-40 leading-48 capitalize">
                   odiopay
                 </p>
@@ -70,27 +112,20 @@ const OtherWorks = () => {
             </div>
           </div>
           <div className="flex-[0.4] h-416 relative bg-intrepid bg-center bg-no-repeat bg-cover">
-            <div className="absolute bg-pink-1 w-full h-416 bg-opacity-[0.32] flex flex-col justify-end rounded-md">
-              <div className="pl-46 pb-42 flex flex-col gap-y-[14px]">
-                <p className="text-white text-40 leading-48 capitalize">
-                  intrepid
-                </p>
-                <button
-                  type="button"
-                  className="capitalize text-brown bg-white w-102 h-38 rounded-[19px]"
-                >
-                  <a href="https://spaces.intrepid.com.ng/" target="_blank">
-                    view
-                  </a>
-                </button>
-              </div>
-            </div>
+            <div className="absolute hover:bg-pink-1 w-full h-416 hover:bg-opacity-[0.32] flex flex-col justify-end rounded-md"></div>
           </div>
         </div>
         <div className="w-full flex items-center gap-x-7">
-          <div className="bg-secureshop-image flex-[0.5] h-416 relative bg-center bg-no-repeat bg-cover">
-            <div className="absolute bg-brown-1 w-full h-416 bg-opacity-[0.32] flex flex-col justify-end rounded-md">
-              <div className="pl-46 pb-42 flex flex-col gap-y-[14px]">
+          <div
+            className="bg-secureshop-image flex-[0.5] h-416 relative bg-center bg-no-repeat bg-cover"
+            onMouseEnter={() => handleMouseHover(secureshopRef)}
+            onMouseLeave={() => handleMouseLeave(secureshopRef)}
+          >
+            <div className="absolute hover:bg-brown-1 w-full h-416 hover:bg-opacity-[0.32] flex flex-col justify-end rounded-md">
+              <div
+                className="pl-46 pb-42 flex flex-col gap-y-[14px]"
+                ref={secureshopRef}
+              >
                 <p className="text-white text-40 leading-48 capitalize">
                   secureshop
                 </p>
@@ -98,27 +133,26 @@ const OtherWorks = () => {
                   type="button"
                   className="capitalize text-brown bg-white w-102 h-38 rounded-[19px]"
                 >
-                  <a href="https://spaces.intrepid.com.ng/" target="_blank">
+                  <a href="https://secureshop.ng/" target="_blank">
                     view
                   </a>
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex-[0.5] h-416 relative bg-smsporte-image bg-center bg-no-repeat bg-cover">
-            <div className="absolute bg-pink-1 w-full h-416 bg-opacity-[0.32] flex flex-col justify-end rounded-md">
-              <div className="pl-46 pb-42 flex flex-col gap-y-[14px]">
+          <div
+            className="flex-[0.5] h-416 relative bg-smsporte-image bg-center bg-no-repeat bg-cover"
+            onMouseEnter={() => handleMouseHover(smsporteRef)}
+            onMouseLeave={() => handleMouseLeave(smsporteRef)}
+          >
+            <div className="absolute hover:bg-pink-1 w-full h-416 hover:bg-opacity-[0.32] flex flex-col justify-end rounded-md">
+              <div
+                className="pl-46 pb-42 flex flex-col gap-y-[14px]"
+                ref={smsporteRef}
+              >
                 <p className="text-white text-40 leading-48 capitalize">
                   smsPorte
                 </p>
-                <button
-                  type="button"
-                  className="capitalize text-brown bg-white w-102 h-38 rounded-[19px]"
-                >
-                  <a href="https://sabigift2021.netlify.app/" target="_blank">
-                    view
-                  </a>
-                </button>
               </div>
             </div>
           </div>
@@ -138,7 +172,7 @@ const OtherWorks = () => {
           <div className="pt-[10px]">
             {" "}
             <button className="uppercase text-white bg-orange-1 rounded-md w-154 h-48 hover:bg-orange-3">
-             <a href="#contact">contact me</a> 
+              <a href="#contact">contact me</a>
             </button>
           </div>{" "}
         </div>
@@ -167,7 +201,9 @@ const OtherWorks = () => {
           </p>
           <div>
             <p className="text-brown text-base leading-8">– David Kelley</p>
-            <p className="text-dark-1 text-sm leading-6 font-light">Founder of IDEO</p>
+            <p className="text-dark-1 text-sm leading-6 font-light">
+              Founder of IDEO
+            </p>
           </div>
         </div>
       </div>

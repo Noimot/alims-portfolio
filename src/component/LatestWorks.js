@@ -212,7 +212,7 @@ const LatestWorks = () => {
         </section>{" "}
       </AnimationEffect>
       <AnimationEffect>
-        <section className="w-full bg-white flex items-center py-120 px-135 gap-x-120">
+        <section className="w-full bg-light-yellow4 flex items-center py-120 px-135 gap-x-120">
           <aside className="flex-[0.5]">
             <img src={realproImage} alt="" />
           </aside>
