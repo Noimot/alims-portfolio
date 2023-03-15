@@ -7,33 +7,33 @@ import instagramIcon from "../assets/images/instagram-icon.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full px-135 pt-132">
+    <div className="w-full px-135 pt-132 dark:bg-[#181A1B]">
       <div className="w-full flex justify-between items-start">
         <div>
           <img src={headerIcon} alt="" />
         </div>
         <div>
           <ul>
-            <span className="text-brown tracking-3 uppercase text-base font-normal leading-8">
+            <span className="text-brown tracking-3 uppercase text-base font-normal leading-8 dark:text-[#E3E2E0]">
               menu
             </span>
-            <li className="pt-4 text-brown tracking-3 capitalize text-base font-normal leading-8">
+            <li className="pt-4 text-brown tracking-3 capitalize text-base font-normal leading-8 dark:text-[#E3E2E0]">
               <a href="#about-me">about me</a>
             </li>
-            <li className="text-brown tracking-3 capitalize text-base font-normal leading-8">
+            <li className="text-brown tracking-3 capitalize text-base font-normal leading-8 dark:text-[#E3E2E0]">
               <a href="#portfolio">portfolio</a>
             </li>
           </ul>
         </div>
         <div>
           <ul>
-            <span className="text-brown tracking-3 uppercase text-base font-normal leading-8">
+            <span className="text-brown tracking-3 uppercase text-base font-normal leading-8 dark:text-[#E3E2E0]">
               services
             </span>
-            <li className="pt-4 text-brown tracking-3 capitalize text-base font-normal leading-8">
+            <li className="pt-4 text-brown tracking-3 capitalize text-base font-normal leading-8 dark:text-[#E3E2E0]">
               <a href="#testimonials">testimonials</a>
             </li>
-            <li className="text-brown tracking-3 capitalize text-base font-normal leading-8">
+            <li className="text-brown tracking-3 capitalize text-base font-normal leading-8 dark:text-[#E3E2E0]">
              <a href="#contact">contact</a> 
             </li>
           </ul>
@@ -61,7 +61,7 @@ const Footer = () => {
       <div className="pt-[50px]">
         <div className="w-full border-b border-solid border-light-yellow2" />
       </div>
-      <p className="pt-[17px] pb-[14px]">
+      <p className="pt-[17px] pb-[14px] dark:text-[#DBD9D5]">
         Copyright © 2022 Abdulalim. All Rights Reserved.
       </p>
     </div>

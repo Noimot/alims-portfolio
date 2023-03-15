@@ -8,8 +8,8 @@ import profile from "../assets/images/profile-pic.svg";
 
 const AboutMe = () => {
   return (
-    <div className="w-full bg-light-yellow px-135" id="about-me">
-      <div className="flex items-center justify-between py-81 border-b border-solid border-light-yellow2">
+    <div className="w-full bg-light-yellow px-135 dark:bg-[#181A1B]" id="about-me">
+      <div className="flex items-center justify-between py-81 border-b border-solid border-light-yellow2 dark:border-[#222324]">
         <div className="flex items-center gap-x-[3px]">
           <span>
             <img src={basketIcon} alt="" />
@@ -20,7 +20,7 @@ const AboutMe = () => {
           <span>
             <img src={desgitalIcon} alt="" />
           </span>
-          <p className="font-mont-heavy text-dark-3 capitalize text-xl">
+          <p className="font-mont-heavy text-dark-3 capitalize text-xl dark:text-[#F8FEFC]">
             desgital
           </p>
         </div>
@@ -45,8 +45,8 @@ const AboutMe = () => {
         </aside>
         <aside className="flex-[0.5] flex flex-col gap-y-15">
           <h2 className="uppercase text-orange-1 tracking-[3px] text-base">about me</h2>
-          <h3 className="-tracking-[1px] font-extrabold text-52 leading-64">I am a Product Designer</h3>
-          <div className="text-brown text-base leading-6 text-opacity-60 flex flex-col gap-y-5">
+          <h3 className="-tracking-[1px] font-extrabold text-52 leading-64 dark:text-[#E3E2E0]">I am a Product Designer</h3>
+          <div className="text-brown text-base leading-6 text-opacity-60 flex flex-col gap-y-5 dark:text-[#E3E2E0]">
             <p>
               from Lagos. I enjoy creating meaningful and delightful
               user-centred digital products that balance user needs and meet

@@ -26,19 +26,19 @@ const OtherWorks = () => {
     smsporteRef.current.style.zIndex = -1;
   });
   return (
-    <section className="w-full px-135 pt-120">
+    <section className="w-full px-135 pt-120 dark:bg-[#1A1D1A]">
       <div className="text-center">
         <h1 className="tracking-3 uppercase text-orange-1 text-base leading-8 font-normal">
           portfolio
         </h1>
-        <h2 className="capitalize text-brown -tracking-1 text-56 font-extrabold leading-64 pt-5">
+        <h2 className="capitalize text-brown -tracking-1 text-56 font-extrabold leading-64 pt-5 dark:text-[#DBD9D5]">
           other works
         </h2>
       </div>
-      <div className="pt-16 bg-white flex flex-col gap-y-8">
+      <div className="pt-16 bg-white flex flex-col gap-y-8 dark:bg-[#1A1D1A]">
         <div className="w-full flex items-center gap-x-7">
           <div
-            className="bg-intrepid-image flex-[0.4] h-416 relative bg-center bg-no-repeat bg-cover"
+            className="bg-intrepid-image flex-[0.4] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(intrepidRef)}
             onMouseLeave={() => handleMouseLeave(intrepidRef)}
           >
@@ -62,7 +62,7 @@ const OtherWorks = () => {
             </div>
           </div>
           <div
-            className="flex-[0.6] h-416 relative bg-sebigift-image bg-center bg-no-repeat bg-cover"
+            className="flex-[0.6] h-416 relative bg-sebigift-image bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(sebigiftRef)}
             onMouseLeave={() => handleMouseLeave(sebigiftRef)}
           >
@@ -88,7 +88,7 @@ const OtherWorks = () => {
         </div>
         <div className="w-full flex items-center gap-x-7">
           <div
-            className="bg-odiopay-image flex-[0.6] h-416 relative bg-center bg-no-repeat bg-cover"
+            className="bg-odiopay-image flex-[0.6] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(odiopayRef)}
             onMouseLeave={() => handleMouseLeave(odiopayRef)}
           >
@@ -111,13 +111,13 @@ const OtherWorks = () => {
               </div>
             </div>
           </div>
-          <div className="flex-[0.4] h-416 relative bg-intrepid bg-center bg-no-repeat bg-cover">
+          <div className="flex-[0.4] h-416 relative bg-intrepid bg-center bg-no-repeat bg-cover rounded-md">
             <div className="absolute hover:bg-pink-1 w-full h-416 hover:bg-opacity-[0.32] flex flex-col justify-end rounded-md"></div>
           </div>
         </div>
         <div className="w-full flex items-center gap-x-7">
           <div
-            className="bg-secureshop-image flex-[0.5] h-416 relative bg-center bg-no-repeat bg-cover"
+            className="bg-secureshop-image flex-[0.5] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(secureshopRef)}
             onMouseLeave={() => handleMouseLeave(secureshopRef)}
           >
@@ -141,7 +141,7 @@ const OtherWorks = () => {
             </div>
           </div>
           <div
-            className="flex-[0.5] h-416 relative bg-smsporte-image bg-center bg-no-repeat bg-cover"
+            className="flex-[0.5] h-416 relative bg-smsporte-image bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(smsporteRef)}
             onMouseLeave={() => handleMouseLeave(smsporteRef)}
           >
@@ -158,7 +158,7 @@ const OtherWorks = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-336 bg-dark-4 rounded-md top-108 relative flex items-center justify-between px-100">
+      <div className="w-full h-336 bg-dark-4 rounded-md top-108 relative flex items-center justify-between px-100 dark:bg-[#3E3C3B]">
         <div className="absolute -top-75 left-100">
           <img src={starImage} alt="" />
         </div>
@@ -183,7 +183,7 @@ const OtherWorks = () => {
           <img src={path} alt="" />
         </div>
       </div>
-      <div className="w-full mt-[200px] flex items-center gap-x-72 pb-[120px]">
+      <div className="w-full mt-[200px] flex items-center gap-x-72 pb-[120px] dark:bg-[#1A1D1A]">
         <div className="flex-[0.5]">
           <img src={blurryImage} alt="" />
         </div>
@@ -194,14 +194,14 @@ const OtherWorks = () => {
           <h1 className="text-orange-1 uppercase tracking-3 font-normal leading-8 text-base">
             words
           </h1>
-          <p className="text-brown text-3xl font-semibold leading-44">
+          <p className="text-brown text-3xl font-semibold leading-44 dark:text-[#B5B6CD]">
             The main tenet of design thinking is empathy for the people you’re
             trying to design for. Leadership is exactly the same thing –
             building empathy for the people that you’re entrusted to help.
           </p>
           <div>
-            <p className="text-brown text-base leading-8">– David Kelley</p>
-            <p className="text-dark-1 text-sm leading-6 font-light">
+            <p className="text-brown text-base leading-8 dark:text-[#E3E2E0]">– David Kelley</p>
+            <p className="text-dark-1 text-sm leading-6 font-light dark:text-[#DBD9D5]">
               Founder of IDEO
             </p>
           </div>

@@ -13,10 +13,10 @@ import AnimationEffect from "./AnimationEffect";
 const LatestWorks = () => {
   return (
     <main className="w-full" id="portfolio">
-      <section className="bg-blue-1 w-full py-120 px-135">
+      <section className="bg-blue-1 w-full py-120 px-135 dark:bg-[#1A1C1D]">
         <div className="w-full text-center">
           <h1 className="tracking-3 uppercase text-orange-1">portfolio</h1>
-          <h2 className="capitalize text-brown -tracking-1 text-56 font-extrabold leading-64 pt-5">
+          <h2 className="capitalize text-brown -tracking-1 text-56 font-extrabold leading-64 pt-5 dark:text-[#DBD9D5]">
             latest works
           </h2>
         </div>
@@ -26,10 +26,10 @@ const LatestWorks = () => {
               <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
                 jeetar
               </h3>
-              <h4 className="text-40 leading-48 text-brown font-extrabold pt-17">
+              <h4 className="text-40 leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
                 eCommerce - Raised Over $200k in Funding
               </h4>
-              <p className="text-brown text-base font-normal leading-8 pt-22 pb-4">
+              <p className="text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#DBD9D5]">
                 Jeetar is that super ecommerce solution that allows users to
                 shop for items with ease and get deliveries in 20minutes or
                 less. Designed to simplify the complex operation of admins,
@@ -47,7 +47,7 @@ const LatestWorks = () => {
           </div>
         </AnimationEffect>
       </section>
-      <section className="w-full bg-light-yellow4 py-124 px-135 flex flex-col gap-y-244">
+      <section className="w-full bg-light-yellow4 py-124 px-135 flex flex-col gap-y-244 dark:bg-[#181A1B]">
         <AnimationEffect>
           <div className="w-full flex items-center gap-x-24">
             <aside className="flex-[0.5]">
@@ -57,10 +57,10 @@ const LatestWorks = () => {
               <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
                 faramove
               </h3>
-              <h4 className="text-40 leading-48 text-brown font-extrabold pt-17">
+              <h4 className="text-40 leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
                 Front-ranking in fast and reliable logistics
               </h4>
-              <p className="text-brown text-base font-normal leading-8 pt-22 pb-4">
+              <p className="text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
                 Faramove offers an on-demand shipping & delivery of goods to
                 individuals, start-ups and large corporations. It is a SaaS
                 product that uses bikes, vans and truck hire for light or heavy
@@ -81,10 +81,10 @@ const LatestWorks = () => {
               <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
                 zepta
               </h3>
-              <h4 className="text-40 leading-48 text-brown font-extrabold pt-17">
+              <h4 className="text-40 leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
                 Single and group online commerce at its peak
               </h4>
-              <p className="text-brown text-base font-normal leading-8 pt-22 pb-4">
+              <p className="text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
                 ZEPTA is a social commerce platform that undertakes retail
                 distribution, enabling small retail merchants to connect and
                 sell their products effectively via social media channels and
@@ -103,7 +103,7 @@ const LatestWorks = () => {
         </AnimationEffect>
       </section>{" "}
       <AnimationEffect>
-        <section className="w-full px-135 pt-120 pb-100 bg-light-yellow flex items-center gap-x-76">
+        <section className="w-full px-135 pt-120 pb-100 bg-light-yellow flex items-center gap-x-76 dark:bg-[#202122]">
           <aside className="flex-[0.5] flex flex-col items-center">
             <img src={kloftImage} alt="" />
             <img src={rectangle} alt="" />
@@ -112,10 +112,10 @@ const LatestWorks = () => {
             <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
               kloft
             </h3>
-            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17">
+            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
               A Property Acquisition Solution
             </h4>
-            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4">
+            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
               Klooft is the go-to-place for all users who need exquisite
               properties to rent and the sellers. Users can also request for
               classic home services such as plumbing, house cleaning, packing
@@ -130,15 +130,15 @@ const LatestWorks = () => {
         </section>{" "}
       </AnimationEffect>
       <AnimationEffect>
-        <section className="w-full bg-light-yellow4 flex items-center pt-78 pb-88 px-135 gap-x-55">
+        <section className="w-full bg-light-yellow4 flex items-center pt-78 pb-88 px-135 gap-x-55 dark:bg-[#181A1B]">
           <aside className="flex-[0.5]">
             <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
               prepbook
             </h3>
-            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17">
+            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
               A True-to-classroom Learning experience
             </h4>
-            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4">
+            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
               Prepbook is an online education platform that gives you more than
               your school classrom experience. From secondary school, to
               university courses and professionals, delivering video courses,
@@ -156,7 +156,7 @@ const LatestWorks = () => {
         </section>
       </AnimationEffect>
       <AnimationEffect>
-        <section className="w-full bg-white flex items-center pt-115 pb-93 px-135 gap-x-120">
+        <section className="w-full bg-white flex items-center pt-115 pb-93 px-135 gap-x-120 dark:bg-[#181A1B]">
           <aside className="flex-[0.5]">
             <img src={voixoutImage} alt="" />
           </aside>
@@ -165,10 +165,10 @@ const LatestWorks = () => {
             <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
               voixout
             </h3>
-            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17">
+            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
               Voixout - A Freedom Social Media App
             </h4>
-            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4">
+            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
               Voixout is a smart development platform that empowers users with
               undiluted free speech and expression of one’s beliefs, emotions,
               preferences and rights towards establishment of a desirable
@@ -186,15 +186,15 @@ const LatestWorks = () => {
         </section>{" "}
       </AnimationEffect>
       <AnimationEffect>
-        <section className="w-full bg-blue-2 flex items-center py-120 px-135 gap-x-120">
+        <section className="w-full bg-blue-2 flex items-center py-120 px-135 gap-x-120 dark:bg-[#1A1D1A]">
           <aside className="flex-[0.5]">
             <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
               woozee
             </h3>
-            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17">
+            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
               Have fun | Make money | Give back
             </h4>
-            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4">
+            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
               Woozeee is a lifestyle platform that combines the power of a
               social media daily challenge, live movies watching, ecommerce
               marketplace to create an all-time experience like no other.
@@ -212,7 +212,7 @@ const LatestWorks = () => {
         </section>{" "}
       </AnimationEffect>
       <AnimationEffect>
-        <section className="w-full bg-light-yellow4 flex items-center py-120 px-135 gap-x-120">
+        <section className="w-full bg-light-yellow4 flex items-center py-120 px-135 gap-x-120 dark:bg-[#181A1B]">
           <aside className="flex-[0.5]">
             <img src={realproImage} alt="" />
           </aside>
@@ -221,10 +221,10 @@ const LatestWorks = () => {
             <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
               realpro
             </h3>
-            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17">
+            <h4 className="text-40 leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
               A COMMUNITY OF HOME SEEKERS & SELLERS
             </h4>
-            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4">
+            <p className="text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
               RealPro creates a convenience for buyers, tenants, landlords
               business owners and browsers interested in immovable property, and
               collect content in the form of advertisements from private

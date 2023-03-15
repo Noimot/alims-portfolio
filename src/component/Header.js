@@ -1,16 +1,17 @@
 import React from "react";
 import headerIcon from "../assets/images/header-logo.svg";
 import moonIcon from "../assets/images/moon-icon.svg";
+import sunIcon from "../assets/images/sunlight-icon.svg";
 
-const Header = () => {
+const Header = ({ handleThemeSwitch, theme }) => {
   return (
-    <div className="w-full font-epilogue shadow-3xl">
+    <div className="w-full font-epilogue shadow-3xl dark:bg-[#181A1B]">
       <header className="w-full h-88 px-135 flex items-center justify-between">
         <div>
           <img src={headerIcon} alt="" />
         </div>
         <div>
-          <ul className="flex items-center justify-between gap-88 capitalize">
+          <ul className="flex items-center justify-between gap-88 capitalize dark:text-[#DBD9D5]">
             <li>
               <a href="#about-me">about me</a>{" "}
             </li>
@@ -21,8 +22,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="flex items-center gap-18">
-          <span className="w-45 h-45 rounded-full border border-solid border-dark-1 flex items-center justify-center">
-            <img src={moonIcon} alt="" />
+          <span
+            className="w-45 h-45 rounded-full border border-solid border-dark-1 dark:border-[#E3E2E0] flex items-center justify-center"
+            onClick={handleThemeSwitch}
+          >
+            <img src={theme === "light" ? moonIcon: sunIcon } alt="" />
           </span>
           <span>
             <button className="rounded-md border border-solid border-orange-1 text-orange-1 px-5 py-1.5 capitalize hover:bg-light-orange transition ease-in-out delay-150 hover:-translate-1">

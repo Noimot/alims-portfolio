@@ -1,14 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  darkMode: "class",
   theme: {
-    xs: "360px",
-    sm: "480px",
-    md: "640px",
-    lg: "976px",
-    xl: "1024px",
-    "2xl": "1280px",
-    "3xl": "1440px",
+    screens: {
+      xs: "360px",
+      sm: "480px",
+      md: "640px",
+      lg: "976px",
+      xl: "1024px",
+      "2xl": "1280px",
+      "3xl": "1350px",
+      "4xl": "1440px",
+    },
     extend: {
       fontFamily: {
         epilogue: ["Epilogue", "sans-serif"],
@@ -23,7 +27,7 @@ module.exports = {
         "secureshop-image": "url('../public/img/secureshop.svg')",
         intrepid: "url('../public/img/intrepid.svg')",
         "smsporte-image": "url('../public/img/smsporte.svg')",
-        "map": "url('../public/img/map.svg')",
+        map: "url('../public/img/map.svg')",
       },
       fontSize: {
         40: "40px",
@@ -137,7 +141,7 @@ module.exports = {
       boxShadow: {
         "3xl": "0px 0px 10px rgba(0, 0, 0, 0.05)",
         "4xl": "0px 32px 64px rgba(57, 20, 0, 0.04)",
-        "5xl": "0px 3px 9px rgba(57, 20, 0, 0.08)"
+        "5xl": "0px 3px 9px rgba(57, 20, 0, 0.08)",
       },
       letterSpacing: {
         3: "3x",
