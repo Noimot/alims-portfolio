@@ -17,20 +17,7 @@ const Map = () => {
     setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
   };
   const handleSubmit = (e) => {
-    e.preventDefault();
-    send(
-      "service_951m9m3",
-      "template_3wccxy8",
-      contactInfo,
-      "JC9EXZzoPBk262rG0"
-    )
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-      });
-    setContactInfo({ ...contactInfo, email: "", address: "", subject: "" });
+    setContactInfo({ ...contactInfo, email: "", subject: "", message: "" });
   };
   return (
     <div className="w-full pt-121 dark:bg-[#181A1B]" id="contact">
@@ -44,10 +31,10 @@ const Map = () => {
           </h1>
           <form
             className="pt-23"
-            // action={`mailto:abdulalimajenifuja@gmail.com?subject=${contactInfo.subject}&body=${contactInfo.message}`}
-            // method="get"
-            // enctype="text/plain"
+            method="POST"
+            target="_blank"
             onSubmit={handleSubmit}
+            action="https://formsubmit.co/77f3afeaa534affb16277fd31ed0ae59"
           >
             <div className="flex flex-col gap-y-4">
               <div className="w-full h-48 rounded-md border border-solid border-orange-1 dark:bg-[#181A1B] dark:border-[#2E2F30]">
@@ -101,7 +88,9 @@ const Map = () => {
               phone
             </p>
           </div>
-          <p className="text-brown leading-8 text-base 3xl:text-xl dark:text-[#DBD9D5]">(+234) 81-612-1289-000</p>
+          <p className="text-brown leading-8 text-base 3xl:text-xl dark:text-[#DBD9D5]">
+            (+234) 81-612-1289-000
+          </p>
         </div>
         <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 flex flex-col gap-y-[26px] px-12 py-8 dark:hover:bg-[#352E2E]">
           <div className="flex items-center gap-x-6">
@@ -113,7 +102,7 @@ const Map = () => {
             </p>
           </div>
           <p className=" text-brown text-base 3xl:text-xl leading-8 font-medium dark:text-[#DBD9D5]">
-            Abdulalimajenifuja@gmail.com
+            Ajenifujaabdulalim@gmail.com
           </p>
         </div>
         <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 rounded-tr-md rounded-br-md flex flex-col gap-y-[26px] pl-12 py-8 dark:hover:bg-[#352E2E]">
@@ -125,7 +114,9 @@ const Map = () => {
               address
             </p>
           </div>
-          <p className="text-brown leading-8 text-base 3xl:text-xl dark:text-[#DBD9D5]">Lagos, Nigeria</p>
+          <p className="text-brown leading-8 text-base 3xl:text-xl dark:text-[#DBD9D5]">
+            Lagos, Nigeria
+          </p>
         </div>
       </div>
       <div className="w-full px-135 h-542">

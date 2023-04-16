@@ -12,10 +12,10 @@ import Footer from "./component/Footer";
 function App() {
   const [theme, setTheme] = useState(null);
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)")) {
-      setTheme("dark");
-    } else {
+    if (window.matchMedia("(prefers-color-scheme: light)")) {
       setTheme("light");
+    } else {
+      setTheme("dark");
     }
   }, []);
   useEffect(() => {
