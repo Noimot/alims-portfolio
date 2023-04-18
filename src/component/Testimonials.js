@@ -19,7 +19,7 @@ const Testimonials = () => {
         </div>
       </div>
       <div className="w-full flex pt-60">
-        <div>
+        <div className="flex-[0.5]">
           <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-tl-md border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
             <StarRating />
             <div className="pt-9">
@@ -71,7 +71,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="flex-[0.5]">
           <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-tr-md border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
             <StarRating />
             <div className="pt-9">
