@@ -21,11 +21,11 @@ const Map = () => {
   };
   return (
     <div className="w-full pt-121 dark:bg-[#181A1B]" id="contact">
-      <div className="w-full h-screen bg-map bg-center bg-no-repeat bg-cover relative pl-135 flex items-center">
-        <div className="absolute top-[44%] right-[32%]">
-          <img src={mapPin} alt="" />
+      <div className="w-full h-screen bg-map bg-center bg-no-repeat bg-cover relative px-[23px] l:px-0 l:pl-135 flex items-center">
+        <div className="absolute top-10 xl:top-[44%] right-5 xl:right-[32%] w-[20px] md:w-[72px]">
+          <img src={mapPin} alt="" className="w-full" />
         </div>
-        <div className="w-470 h-464 bg-white rounded-md pl-48 pr-47 pb-48 pt-57 dark:bg-[#202122]">
+        <div className="z-[100] w-auto l:w-470 h-464 bg-white rounded-md pl-48 pr-47 pb-48 pt-57 dark:bg-[#202122]">
           <h1 className="text-brown text-2xl leading-8 font-bold dark:text-[#DBD9D5]">
             Drop by, love to hear from you!
           </h1>
@@ -37,33 +37,33 @@ const Map = () => {
             action="https://formsubmit.co/77f3afeaa534affb16277fd31ed0ae59"
           >
             <div className="flex flex-col gap-y-4">
-              <div className="w-full h-48 rounded-md border border-solid border-orange-1 dark:bg-[#181A1B] dark:border-[#2E2F30]">
+              <div className="w-full h-48 rounded-md border border-solid border-[#F3D1BF] dark:bg-[#181A1B] dark:border-[#2E2F30]">
                 <input
                   type="text"
                   name="email"
                   value={contactInfo.email}
                   onChange={handleChange}
                   placeholder="Your email"
-                  className="w-full h-full placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-orange-1 dark:bg-[#181A1B] dark:placeholder:text-[#DBD9D5] dark:outline-[#DBD9D5] dark:text-[#DBD9D5]"
+                  className="w-full h-full placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-[#F3D1BF] dark:bg-[#181A1B] dark:placeholder:text-[#DBD9D5] dark:outline-[#DBD9D5] dark:text-[#DBD9D5]"
                 />
               </div>
-              <div className="w-full h-48 rounded-md border border-solid border-orange-1 dark:bg-[#181A1B] dark:border-[#2E2F30]">
+              <div className="w-full h-48 rounded-md border border-solid border-[#F3D1BF] dark:bg-[#181A1B] dark:border-[#2E2F30]">
                 <input
                   type="text"
                   name="subject"
                   value={contactInfo.subject}
                   onChange={handleChange}
                   placeholder="Subject"
-                  className="w-full h-full placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-orange-1 dark:bg-[#181A1B] dark:placeholder:text-[#DBD9D5] dark:outline-[#DBD9D5] dark:text-[#DBD9D5]"
+                  className="w-full h-full placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-[#F3D1BF] dark:bg-[#181A1B] dark:placeholder:text-[#DBD9D5] dark:outline-[#DBD9D5] dark:text-[#DBD9D5]"
                 />
               </div>
-              <div className="w-full h-[96px] rounded-md border border-solid border-orange-1 dark:bg-[#181A1B] dark:border-[#2E2F30]">
+              <div className="w-full h-[96px] rounded-md border border-solid border-[#F3D1BF] dark:bg-[#181A1B] dark:border-[#2E2F30]">
                 <textarea
                   name="message"
                   value={contactIcon.message}
                   onChange={handleChange}
                   placeholder="Message"
-                  className="w-full h-full resize-none placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-orange-1 dark:bg-[#181A1B] dark:placeholder:text-[#DBD9D5] dark:outline-[#DBD9D5] dark:text-[#DBD9D5]"
+                  className="w-full h-full resize-none placeholder:text-brown placeholder:text-opacity-30 px-4 pt-9 outline-[#F3D1BF] dark:bg-[#181A1B] dark:placeholder:text-[#DBD9D5] dark:outline-[#DBD9D5] dark:text-[#DBD9D5]"
                 ></textarea>
               </div>
             </div>
@@ -78,7 +78,7 @@ const Map = () => {
           </form>
         </div>
       </div>
-      <div className="w-full px-135 grid grid-cols-3 py-120">
+      <div className="w-full px-12 lg:px-16 xl:px-135 grid l:grid-cols-3 py-120">
         <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 rounded-tl-md rounded-bl-md flex flex-col gap-y-[26px] pl-12 py-8 dark:hover:bg-[#352E2E]">
           <div className="flex items-center gap-x-6">
             <span className="flex items-center justify-center w-16 h-16 bg-orange-1 rounded-full">
@@ -88,7 +88,7 @@ const Map = () => {
               phone
             </p>
           </div>
-          <p className="text-brown leading-8 text-base 3xl:text-xl dark:text-[#DBD9D5]">
+          <p className="text-brown leading-8 text-base l:text-sm lg:text-base xl:text-xl dark:text-[#DBD9D5]">
             (+234) 81-612-1289-000
           </p>
         </div>
@@ -101,7 +101,7 @@ const Map = () => {
               email
             </p>
           </div>
-          <p className=" text-brown text-base 3xl:text-xl leading-8 font-medium dark:text-[#DBD9D5]">
+          <p className="break-all text-brown text-base l:text-sm lg:text-base xl:text-xl leading-8 font-medium dark:text-[#DBD9D5] whitespace-break-spaces">
             Ajenifujaabdulalim@gmail.com
           </p>
         </div>
@@ -114,15 +114,15 @@ const Map = () => {
               address
             </p>
           </div>
-          <p className="text-brown leading-8 text-base 3xl:text-xl dark:text-[#DBD9D5]">
-            Lagos, Nigeria
+          <p className="text-brown leading-8 text-base l:text-sm lg:text-base xl:text-xl dark:text-[#DBD9D5]">
+            Manchester, United Kingdom
           </p>
         </div>
       </div>
-      <div className="w-full px-135 h-542">
-        <div className="bg-orange-1 w-full h-full rounded-md flex items-center pl-100 pr-70 pt-94 pb-80 gap-x-55">
-          <div className="flex-[0.5] flex flex-col gap-y-7">
-            <h1 className="-tracking-1 text-white text-56 leading-64 font-extrabold">
+      <div className="w-full px-12 lg:px-16 xl:px-135 h-auto l:h-542">
+        <div className="bg-orange-1 w-full h-full rounded-md flex flex-col-reverse l:flex-row items-center l:pl-100 l:pr-70 pt-94 pb-80 gap-x-55 gap-y-[15px] px-5">
+          <div className="l:flex-[0.5] flex flex-col gap-y-7">
+            <h1 className="-tracking-1 text-white text-[40px] leading-[48px] l:text-56 l:leading-64 font-extrabold">
               I’m Here to Help Build Your Dream Project
             </h1>
             <p className="text-base font-normal leading-8 text-white pb-[6px]">
@@ -134,7 +134,7 @@ const Map = () => {
               <a href="#contact">contact me</a>
             </button>
           </div>
-          <div className="flex-[0.5]">
+          <div className="l:flex-[0.5]">
             <img src={contactIcon} alt="" />
           </div>
         </div>

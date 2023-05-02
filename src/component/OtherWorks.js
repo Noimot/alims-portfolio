@@ -1,8 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import starImage from "../assets/images/star.svg";
 import blockImage from "../assets/images/block-image.svg";
+import blockImageMobile from "../assets/images/block-image-mobile.svg";
 import path from "../assets/images/path.svg";
 import blurryImage from "../assets/images/blurry-image.svg";
+import blurryImageWithText from "../assets/images/blurry-image-with-text.svg";
 import quotesImage from "../assets/images/quotes-image.svg";
 
 const OtherWorks = () => {
@@ -26,19 +28,19 @@ const OtherWorks = () => {
     smsporteRef.current.style.zIndex = -1;
   });
   return (
-    <section className="w-full px-135 pt-120 dark:bg-[#1A1D1A]">
+    <section className="w-full px-12 lg:px-16 xl:px-135 pt-120 dark:bg-[#1A1D1A]">
       <div className="text-center">
         <h1 className="tracking-3 uppercase text-orange-1 text-base leading-8 font-normal">
           portfolio
         </h1>
-        <h2 className="capitalize text-brown -tracking-1 text-56 font-extrabold leading-64 pt-5 dark:text-[#DBD9D5]">
+        <h2 className="capitalize text-brown -tracking-1 text-[40px] sm:text-5xl  md:text-56 font-extrabold leading-64 pt-5 dark:text-[#DBD9D5]">
           other works
         </h2>
       </div>
       <div className="pt-16 bg-white flex flex-col gap-y-8 dark:bg-[#1A1D1A]">
-        <div className="w-full flex items-center gap-x-7">
+        <div className="w-full flex items-center flex-col l:flex-row gap-y-[30px] gap-x-7">
           <div
-            className="bg-intrepid-image flex-[0.4] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
+            className="bg-intrepid-image w-full l:flex-[0.4] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(intrepidRef)}
             onMouseLeave={() => handleMouseLeave(intrepidRef)}
           >
@@ -62,7 +64,7 @@ const OtherWorks = () => {
             </div>
           </div>
           <div
-            className="flex-[0.6] h-416 relative bg-sebigift-image bg-center bg-no-repeat bg-cover rounded-md"
+            className="w-full l:flex-[0.6] h-416 relative bg-sebigift-image bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(sebigiftRef)}
             onMouseLeave={() => handleMouseLeave(sebigiftRef)}
           >
@@ -86,9 +88,9 @@ const OtherWorks = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex items-center gap-x-7">
+        <div className="w-full flex items-center flex-col l:flex-row gap-y-[30px] gap-x-7">
           <div
-            className="bg-odiopay-image flex-[0.6] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
+            className="bg-odiopay-image w-full l:flex-[0.6] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(odiopayRef)}
             onMouseLeave={() => handleMouseLeave(odiopayRef)}
           >
@@ -111,13 +113,13 @@ const OtherWorks = () => {
               </div>
             </div>
           </div>
-          <div className="flex-[0.4] h-416 relative bg-intrepid bg-center bg-no-repeat bg-cover rounded-md">
+          <div className="hidden w-full l:flex l:flex-[0.4] h-416 relative bg-intrepid bg-center bg-no-repeat bg-cover rounded-md">
             <div className="absolute hover:bg-pink-1 w-full h-416 hover:bg-opacity-[0.32] flex flex-col justify-end rounded-md"></div>
           </div>
         </div>
-        <div className="w-full flex items-center gap-x-7">
+        <div className="w-full flex items-center flex-col l:flex-row gap-y-[30px] gap-x-7">
           <div
-            className="bg-secureshop-image flex-[0.5] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
+            className="bg-secureshop-image w-full l:flex-[0.5] h-416 relative bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(secureshopRef)}
             onMouseLeave={() => handleMouseLeave(secureshopRef)}
           >
@@ -141,7 +143,7 @@ const OtherWorks = () => {
             </div>
           </div>
           <div
-            className="flex-[0.5] h-416 relative bg-smsporte-image bg-center bg-no-repeat bg-cover rounded-md"
+            className="hidden w-full l:flex l:flex-[0.5] h-416 relative bg-smsporte-image bg-center bg-no-repeat bg-cover rounded-md"
             onMouseEnter={() => handleMouseHover(smsporteRef)}
             onMouseLeave={() => handleMouseLeave(smsporteRef)}
           >
@@ -158,11 +160,11 @@ const OtherWorks = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-336 bg-dark-4 rounded-md top-108 relative flex items-center justify-between px-100 dark:bg-[#3E3C3B]">
-        <div className="absolute -top-75 left-100">
+      <div className="w-full h-[832px] l:h-336 bg-dark-4 rounded-md top-108 pt-[92px] pb-[49px] relative flex items-center flex-col l:flex-row justify-between l:px-100 dark:bg-[#3E3C3B]">
+        <div className="absolute -top-75 left-0 sm:left-100">
           <img src={starImage} alt="" />
         </div>
-        <div className="flex flex-col gap-y-13">
+        <div className="flex flex-col gap-y-13 px-7 l:px-0">
           <h1 className="text-orange-1 uppercase tracking-3 font-semibold leading-8 text-base">
             connect with me
           </h1>
@@ -171,24 +173,30 @@ const OtherWorks = () => {
           </p>
           <div className="pt-[10px]">
             {" "}
-            <button className="uppercase text-white bg-orange-1 rounded-md w-154 h-48 hover:bg-orange-3">
+            <button className="capitalize l:uppercase text-white text-sm leading-[14.35px] font-semibold l:font-black bg-orange-1 rounded-md w-154 h-48 hover:bg-orange-3">
               <a href="#contact">contact me</a>
             </button>
           </div>{" "}
         </div>
-        <div>
+        <div className="hidden l:block">
           <img src={blockImage} alt="" />
+        </div>
+        <div className="l:hidden">
+          <img src={blockImageMobile} alt="" />
         </div>
         <div>
           <img src={path} alt="" />
         </div>
       </div>
-      <div className="w-full mt-[200px] flex items-center gap-x-72 pb-[120px] dark:bg-[#1A1D1A]">
-        <div className="flex-[0.5]">
+      <div className="w-full mt-[200px] flex items-center flex-col-reverse l:flex-row gap-y-[30px] gap-x-72 pb-[120px] dark:bg-[#1A1D1A]">
+        <div className="w-full hidden l:flex l:flex-[0.5]">
           <img src={blurryImage} alt="" />
         </div>
-        <div className="relative flex-[0.5] flex flex-col gap-y-23">
-          <div className="absolute top-0 right-0">
+        <div className="w-full l:hidden">
+          <img src={blurryImageWithText} alt="" className="w-full h-full object-cover"/>
+        </div>
+        <div className="relative w-full l:flex-[0.5] flex flex-col gap-y-23">
+          <div className="hidden l:block absolute top-0 right-0">
             <img src={quotesImage} alt="" />
           </div>
           <h1 className="text-orange-1 uppercase tracking-3 font-normal leading-8 text-base">
@@ -199,8 +207,10 @@ const OtherWorks = () => {
             trying to design for. Leadership is exactly the same thing –
             building empathy for the people that you’re entrusted to help.
           </p>
-          <div>
-            <p className="text-brown text-base leading-8 dark:text-[#E3E2E0]">– David Kelley</p>
+          <div className="hidden l:block">
+            <p className="text-brown text-base leading-8 dark:text-[#E3E2E0]">
+              – David Kelley
+            </p>
             <p className="text-dark-1 text-sm leading-6 font-light dark:text-[#DBD9D5]">
               Founder of IDEO
             </p>

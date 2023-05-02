@@ -7,10 +7,13 @@ import instagramIcon from "../assets/images/instagram-icon.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full px-135 pt-132 dark:bg-[#181A1B]">
-      <div className="w-full flex justify-between items-start">
-        <div>
+    <div className="w-full px-12 lg:px-16 xl:px-135 pt-132 dark:bg-[#181A1B]">
+      <div className="w-full flex  items-center flex-col justify-center text-center gap-y-[58px] l:justify-between l:items-start l:flex-row">
+        <div className="hidden l:block">
           <img src={headerIcon} alt="" />
+        </div>
+        <div className="l:hidden">
+          <p className="text-brown font-bold text-2xl leading-8 capitalize text-center">agent</p>
         </div>
         <div>
           <ul>
@@ -61,7 +64,7 @@ const Footer = () => {
       <div className="pt-[50px]">
         <div className="w-full border-b border-solid border-light-yellow2" />
       </div>
-      <p className="pt-[17px] pb-[14px] dark:text-[#DBD9D5]">
+      <p className="pt-[17px] pb-[14px] dark:text-[#DBD9D5] text-center">
         Copyright © 2022 Abdulalim. All Rights Reserved.
       </p>
     </div>
