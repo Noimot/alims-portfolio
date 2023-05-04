@@ -31,7 +31,7 @@ const LatestWorks = () => {
           </h2>
         </div>
         <AnimationEffect>
-          <div className="pt-50 flex flex-col l:flex-row items-center gap-y-[30px] gap-x-98">
+          <div className="pt-50 flex flex-col l:flex-row items-center gap-y-[30px] gap-x-98 dark:bg-[#1A1C1D]">
             <aside className="flex-[0.5]">
               <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
                 jeetar
@@ -64,75 +64,75 @@ const LatestWorks = () => {
           </div>
         </AnimationEffect>
       </section>
-      <section className="w-full bg-light-yellow4 py-124 px-12 lg:px-16 2xl:px-135 flex flex-col gap-y-244 dark:bg-[#181A1B]">
-        <AnimationEffect>
-          <div className="w-full flex items-center gap-x-24 gap-y-[30px] flex-col-reverse l:flex-row">
-            <aside className="l:flex-[0.5] flex flex-col gap-y-[30px]">
-              <img src={faramoveImage} alt="" />
-              <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-                <a href="https://faramove.com/" target="_blank">
-                  view site
-                </a>
-              </button>
-            </aside>
-            <aside className="flex-[0.5]">
-              <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
-                faramove
-              </h3>
-              <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 sm:leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
-                Front-ranking in fast and reliable logistics
-              </h4>
-              <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
-                Faramove offers an on-demand shipping & delivery of goods to
-                individuals, start-ups and large corporations. It is a SaaS
-                product that uses bikes, vans and truck hire for light or heavy
-                moveables, locally, nationally and internationally.
-              </p>
-              <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-                <a href="https://faramove.com/" target="_blank">
-                  view site
-                </a>
-              </button>
-            </aside>
-          </div>
-        </AnimationEffect>
-        <AnimationEffect>
-          {" "}
-          <div className="w-full flex items-center gap-x-102 gap-y-[30px] flex-col l:flex-row">
-            <aside className="flex-[0.5]">
-              <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
-                zepta
-              </h3>
-              <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 sm:leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
-                Single and group online commerce at its peak
-              </h4>
-              <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
-                ZEPTA is a social commerce platform that undertakes retail
-                distribution, enabling small retail merchants to connect and
-                sell their products effectively via social media channels and
-                earn money from single and group purchases.
-              </p>
-              <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-                <a href="https://zepta-landing.netlify.app/" target="_blank">
-                  view site
-                </a>
-              </button>
-            </aside>
-            <aside className="flex-[0.5]">
-              <img src={zeptaImage} alt="" />
-            </aside>
-          </div>
-          <div className="pt-[30px]">
+      {/* <section className="w-full flex flex-col"> */}
+      <AnimationEffect>
+        <div className="w-full py-124 px-12 lg:px-16 2xl:px-135 flex items-center gap-x-24 gap-y-[30px] flex-col-reverse l:flex-row bg-light-yellow4 dark:bg-[#000000]">
+          <aside className="l:flex-[0.5] flex flex-col gap-y-[30px]">
+            <img src={faramoveImage} alt="" />
             <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+              <a href="https://faramove.com/" target="_blank">
+                view site
+              </a>
+            </button>
+          </aside>
+          <aside className="flex-[0.5]">
+            <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
+              faramove
+            </h3>
+            <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 sm:leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
+              Front-ranking in fast and reliable logistics
+            </h4>
+            <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
+              Faramove offers an on-demand shipping & delivery of goods to
+              individuals, start-ups and large corporations. It is a SaaS
+              product that uses bikes, vans and truck hire for light or heavy
+              moveables, locally, nationally and internationally.
+            </p>
+            <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+              <a href="https://faramove.com/" target="_blank">
+                view site
+              </a>
+            </button>
+          </aside>
+        </div>
+      </AnimationEffect>
+      <AnimationEffect>
+        {" "}
+        <div className="w-full py-124 px-12 lg:px-16 2xl:px-135 flex items-center gap-x-102 gap-y-[30px] flex-col l:flex-row bg-light-yellow4 dark:bg-[#1A1C1D]">
+          <aside className="flex-[0.5]">
+            <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
+              zepta
+            </h3>
+            <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 sm:leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
+              Single and group online commerce at its peak
+            </h4>
+            <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
+              ZEPTA is a social commerce platform that undertakes retail
+              distribution, enabling small retail merchants to connect and sell
+              their products effectively via social media channels and earn
+              money from single and group purchases.
+            </p>
+            <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
               <a href="https://zepta-landing.netlify.app/" target="_blank">
                 view site
               </a>
             </button>
-          </div>
-        </AnimationEffect>
-      </section>{" "}
+          </aside>
+          <aside className="flex-[0.5]">
+            <img src={zeptaImage} alt="" />
+            <div className="pt-[30px]">
+              <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+                <a href="https://zepta-landing.netlify.app/" target="_blank">
+                  view site
+                </a>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </AnimationEffect>
+      {/* </section>{" "} */}
       <AnimationEffect>
-        <section className="w-full px-12 lg:px-16 2xl:px-135 pt-120 pb-100 bg-light-yellow flex items-center gap-x-76 gap-y-[30px] flex-col-reverse l:flex-row dark:bg-[#202122]">
+        <section className="w-full px-12 lg:px-16 2xl:px-135 pt-120 pb-100 bg-light-yellow flex items-center gap-x-76 gap-y-[30px] flex-col-reverse l:flex-row dark:bg-[#000000]">
           <aside className="l:flex-[0.5] flex flex-col gap-y-[30px]">
             <div className="flex flex-col items-center">
               <img src={kloftImage} alt="" />
@@ -166,7 +166,7 @@ const LatestWorks = () => {
         </section>{" "}
       </AnimationEffect>
       <AnimationEffect>
-        <section className="w-full bg-light-yellow4 flex items-center gap-y-[30px] flex-col l:flex-row pt-78 pb-88 px-12 lg:px-16 2xl:px-135 gap-x-55 dark:bg-[#181A1B]">
+        <section className="w-full bg-light-yellow4 flex items-center gap-y-[30px] flex-col l:flex-row pt-78 pb-88 px-12 lg:px-16 2xl:px-135 gap-x-55 dark:bg-[#0C0D0D]">
           <aside className="flex-[0.5]">
             <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
               prepbook
@@ -198,21 +198,23 @@ const LatestWorks = () => {
           </aside>
         </section>
       </AnimationEffect>
-      {<div
-        className="flex l:hidden items-center gap-x-[17px] px-12 lg:px-16 2xl:px-135"
-        onClick={toggleView}
-      >
-        <p className="text-[#EF6D58] text-base leading-7">
-          {!viewMore ? "View more projects" : "View less projects"}
-        </p>
-        <span>
-          <img src={chevronDown} alt="" />
-        </span>
-      </div>}
+      {
+        <div
+          className="flex l:hidden items-center gap-x-[17px] px-12 lg:px-16 2xl:px-135 dark:bg-[#0C0D0D]"
+          onClick={toggleView}
+        >
+          <p className="text-[#EF6D58] text-base leading-7">
+            {!viewMore ? "View more projects" : "View less projects"}
+          </p>
+          <span>
+            <img src={chevronDown} alt="" />
+          </span>
+        </div>
+      }
       {viewMore && (
         <>
           <AnimationEffect>
-            <section className="w-full bg-white flex items-center gap-y-[30px] flex-col-reverse l:flex-row pt-115 pb-93 px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#181A1B]">
+            <section className="w-full bg-white flex items-center gap-y-[30px] flex-col-reverse l:flex-row pt-115 pb-93 px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#0C0D0D]">
               <aside className="flex-[0.5]">
                 <img src={voixoutImage} alt="" />
                 <div className="pt-[30px]">
@@ -251,7 +253,7 @@ const LatestWorks = () => {
             </section>{" "}
           </AnimationEffect>
           <AnimationEffect>
-            <section className="w-full bg-blue-2 flex items-center gap-y-[30px] flex-col l:flex-row py-120 px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#1A1D1A]">
+            <section className="w-full bg-blue-2 flex items-center gap-y-[30px] flex-col l:flex-row py-120 px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#000000]">
               <aside className="flex-[0.5]">
                 <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
                   woozee
@@ -284,7 +286,7 @@ const LatestWorks = () => {
             </section>{" "}
           </AnimationEffect>
           <AnimationEffect>
-            <section className="w-full bg-light-yellow4 flex items-center py-120 gap-y-[30px] flex-col-reverse l:flex-row px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#181A1B]">
+            <section className="w-full bg-light-yellow4 flex items-center py-120 gap-y-[30px] flex-col-reverse l:flex-row px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#1A1C1D]">
               <aside className="flex-[0.5]">
                 <img src={realproImage} alt="" />
                 <div className="py-[30px]">

@@ -10,7 +10,7 @@ import { Loader } from "../assets/icon/Loader";
 
 const HeroPage = ({ theme }) => {
   return (
-    <div className="w-full px-12 lg:px-16 2xl:px-135 flex flex-col l:flex-row justify-center l:justify-between items-center h-auto py-110 gap-y-7 l:gap-x-7 dark:bg-[#181A1B]">
+    <div className="w-full px-12 lg:px-16 2xl:px-135 flex flex-col l:flex-row justify-center l:justify-between items-center h-auto py-110 gap-y-7 l:gap-x-7 dark:bg-[#000000]">
       <div className="flex-[0.4]">
         <div className="flex flex-col gap-y-3">
           <h1 className="capitalize font-extrabold leading-8 lg:whitespace-nowrap">

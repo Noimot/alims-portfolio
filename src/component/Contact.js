@@ -20,7 +20,7 @@ const Map = () => {
     setContactInfo({ ...contactInfo, email: "", subject: "", message: "" });
   };
   return (
-    <div className="w-full pt-121 dark:bg-[#181A1B]" id="contact">
+    <div className="w-full dark:bg-[#000000]" id="contact">
       <div className="w-full h-screen bg-map bg-center bg-no-repeat bg-cover relative px-[23px] l:px-0 l:pl-135 flex items-center">
         <div className="absolute top-10 xl:top-[44%] right-5 xl:right-[32%] w-[20px] md:w-[72px]">
           <img src={mapPin} alt="" className="w-full" />
@@ -122,7 +122,7 @@ const Map = () => {
       <div className="w-full px-12 lg:px-16 xl:px-135 h-auto l:h-542">
         <div className="bg-orange-1 w-full h-full rounded-md flex flex-col-reverse l:flex-row items-center l:pl-100 l:pr-70 pt-94 pb-80 gap-x-55 gap-y-[15px] px-5">
           <div className="l:flex-[0.5] flex flex-col gap-y-7">
-            <h1 className="-tracking-1 text-white text-[40px] leading-[48px] l:text-56 l:leading-64 font-extrabold">
+            <h1 className="-tracking-1 text-white text-[40px] leading-[48px] l:leading-[42px] lg:leading-[48px] 2xl:text-56 2xl:leading-64 font-extrabold">
               I’m Here to Help Build Your Dream Project
             </h1>
             <p className="text-base font-normal leading-8 text-white pb-[6px]">

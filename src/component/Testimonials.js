@@ -7,7 +7,7 @@ import faruqImage from "../assets/images/faruq.svg";
 
 const Testimonials = () => {
   return (
-    <div className="w-full px-12 lg:px-16 2xl:px-135 dark:bg-[#1A1D1A]" id="testimonials">
+    <div className="w-full px-12 lg:px-16 2xl:px-135 dark:bg-[#1A1C1D] py-[120px]" id="testimonials">
       <div className="w-full text-center flex flex-col items-center justify-center">
         <div className="w-full l:w-546">
           <h1 className="tracking-3 uppercase text-orange-1 text-base leading-8 font-normal">
