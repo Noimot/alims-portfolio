@@ -1,12 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import headerIcon from "../assets/images/header-logo.svg";
 import moonIcon from "../assets/images/moon-icon.svg";
 import sunIcon from "../assets/images/sunlight-icon.svg";
+import MobileMenu from "./MobileMenu";
 
 const Header = ({ handleThemeSwitch, theme }) => {
+  const [menu, setMenu] = useState(false);
+  const handleMenu = () => {
+    setMenu(state => !state)
+  }
   return (
     <div className="w-full font-epilogue shadow-3xl dark:bg-[#181A1B]">
-      <header className="w-full h-88 px-12 lg:px-16 xl:px-135 flex items-center justify-between">
+      <header className="w-full h-88 px-12 lg:px-16 2xl:px-135 flex items-center justify-between">
         <div>
           <img src={headerIcon} alt="" />
         </div>
@@ -23,10 +28,10 @@ const Header = ({ handleThemeSwitch, theme }) => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-y-1 md:hidden">
-          <span className="inline-block  bg-[#14142B] border-solid border-2 w-6 border-[#14142B]" />
-          <span className="inline-block  bg-[#14142B] border-solid border-2 w-6 border-[#14142B]" />
-          <span className="inline-block  bg-[#14142B] border-solid border-2 w-6 border-[#14142B]" />
+        <div className="flex flex-col gap-y-1 md:hidden cursor-pointer" onClick={handleMenu}>
+          <span className={`inline-block  bg-[#14142B] border-solid border-2 w-6 border-[#14142B] origin-left ease-in transition-all duration-[2s] ${menu && "rotate-45"}`} />
+          <span className={`inline-block  bg-[#14142B] border-solid border-2 w-6 border-[#14142B] origin-left ease-in transition-all duration-[2s] ${menu && "opacity-0"}`} />
+          <span className={`inline-block  bg-[#14142B] border-solid border-2 w-6 border-[#14142B] origin-left ease-in transition-all duration-[2s] ${menu && "-rotate-45"}`} />
         </div>
         <div className="hidden md:flex items-center gap-18">
           <span
@@ -42,6 +47,7 @@ const Header = ({ handleThemeSwitch, theme }) => {
           </span>
         </div>
       </header>
+      {menu && <MobileMenu menu={menu} handleMenu={handleMenu} />}
     </div>
   );
 };

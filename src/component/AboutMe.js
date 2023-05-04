@@ -19,7 +19,7 @@ const AboutMe = () => {
   }, [window.innerWidth]);
   return (
     <div
-      className="w-full bg-light-yellow px-12 lg:px-16 xl:px-135 dark:bg-[#181A1B]"
+      className="w-full bg-light-yellow px-12 lg:px-16 2xl:px-135 dark:bg-[#181A1B]"
       id="about-me"
     >
       <div className="hidden l:flex items-center justify-between py-81 border-b border-solid border-light-yellow2 dark:border-[#222324]">

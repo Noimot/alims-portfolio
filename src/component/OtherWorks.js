@@ -28,7 +28,7 @@ const OtherWorks = () => {
     smsporteRef.current.style.zIndex = -1;
   });
   return (
-    <section className="w-full px-12 lg:px-16 xl:px-135 pt-120 dark:bg-[#1A1D1A]">
+    <section className="w-full px-12 lg:px-16 2xl:px-135 pt-120 dark:bg-[#1A1D1A]">
       <div className="text-center">
         <h1 className="tracking-3 uppercase text-orange-1 text-base leading-8 font-normal">
           portfolio

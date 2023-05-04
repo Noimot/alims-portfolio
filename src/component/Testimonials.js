@@ -7,7 +7,7 @@ import faruqImage from "../assets/images/faruq.svg";
 
 const Testimonials = () => {
   return (
-    <div className="w-full px-12 lg:px-16 xl:px-135 dark:bg-[#1A1D1A]" id="testimonials">
+    <div className="w-full px-12 lg:px-16 2xl:px-135 dark:bg-[#1A1D1A]" id="testimonials">
       <div className="w-full text-center flex flex-col items-center justify-center">
         <div className="w-full l:w-546">
           <h1 className="tracking-3 uppercase text-orange-1 text-base leading-8 font-normal">
@@ -20,7 +20,7 @@ const Testimonials = () => {
       </div>
       <div className="w-full flex pt-60 flex-col l:flex-row">
         <div className="w-full l:flex-[0.5]">
-          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-tl-md border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
+          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-tl-md rounded-tr-md l:rounded-tr-none border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
             <StarRating />
             <div className="pt-9">
               <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 dark:text-[#E3E2E0]">
@@ -47,7 +47,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-b-md border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
+          <div className="hover:bg-light-yellow2 p-12 shadow-4xl l:rounded-b-md border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
             <StarRating />
             <div className="pt-9">
               <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 dark:text-[#E3E2E0]">
@@ -72,7 +72,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="w-full l:flex-[0.5]">
-          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-tr-md border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
+          <div className="hover:bg-light-yellow2 p-12 shadow-4xl l:rounded-tr-md border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
             <StarRating />
             <div className="pt-9">
               <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 dark:text-[#E3E2E0]">
@@ -95,7 +95,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-br-md border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
+          <div className="hover:bg-light-yellow2 p-12 shadow-4xl rounded-br-md rounded-bl-md l:rounded-bl-none border border-solid border-light-yellow2 dark:hover:bg-[#504C61]">
             <StarRating />
             <div className="pt-9">
               <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 dark:text-[#E3E2E0]">

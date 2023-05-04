@@ -78,8 +78,8 @@ const Map = () => {
           </form>
         </div>
       </div>
-      <div className="w-full px-12 lg:px-16 xl:px-135 grid l:grid-cols-3 py-120">
-        <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 rounded-tl-md rounded-bl-md flex flex-col gap-y-[26px] pl-12 py-8 dark:hover:bg-[#352E2E]">
+      <div className="w-full px-12 lg:px-16 2xl:px-135 grid l:grid-cols-3 py-120">
+        <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 rounded-tl-md rounded-tr-md l:rounded-tr-none l:rounded-bl-md flex flex-col gap-y-[26px] pl-12 py-8 dark:hover:bg-[#352E2E]">
           <div className="flex items-center gap-x-6">
             <span className="flex items-center justify-center w-16 h-16 bg-orange-1 rounded-full">
               <img src={phoneIcon} alt="" />
@@ -105,7 +105,7 @@ const Map = () => {
             Ajenifujaabdulalim@gmail.com
           </p>
         </div>
-        <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 rounded-tr-md rounded-br-md flex flex-col gap-y-[26px] pl-12 py-8 dark:hover:bg-[#352E2E]">
+        <div className="hover:bg-light-yellow2 border border-solid border-light-yellow2 l:rounded-tr-md rounded-br-md  rounded-bl-md l:rounded-bl-none flex flex-col gap-y-[26px] pl-12 py-8 dark:hover:bg-[#352E2E]">
           <div className="flex items-center gap-x-6">
             <span className="flex items-center justify-center w-16 h-16 bg-orange-1 rounded-full">
               <img src={addressIcon} alt="" />

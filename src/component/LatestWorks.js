@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import jeetarImage from "../assets/images/jeetar-image.svg";
 import faramoveImage from "../assets/images/faramove-image.svg";
 import zeptaImage from "../assets/images/zapta-image.svg";
@@ -8,12 +8,22 @@ import prepbookImage from "../assets/images/prepbook-image.svg";
 import voixoutImage from "../assets/images/voixout-image.svg";
 import woozeeImage from "../assets/images/woozee-image.svg";
 import realproImage from "../assets/images/realpro-image.svg";
+import chevronDown from "../assets/images/chevron-down.svg";
 import AnimationEffect from "./AnimationEffect";
 
 const LatestWorks = () => {
+  const [viewMore, setViewMore] = useState(false);
+  const toggleView = () => {
+    setViewMore((prev) => !prev);
+  };
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      setViewMore(true);
+    }
+  }, [window.innerWidth]);
   return (
     <main className="w-full" id="portfolio">
-      <section className="bg-blue-1 w-full py-120 px-12 lg:px-16 xl:px-135 dark:bg-[#1A1C1D]">
+      <section className="bg-blue-1 w-full py-120 px-12 lg:px-16 2xl:px-135 dark:bg-[#1A1C1D]">
         <div className="w-full text-center">
           <h1 className="tracking-3 uppercase text-orange-1">portfolio</h1>
           <h2 className="capitalize text-brown -tracking-1 text-[40px] sm:text-56 font-extrabold leading-64 pt-5 dark:text-[#DBD9D5]">
@@ -54,7 +64,7 @@ const LatestWorks = () => {
           </div>
         </AnimationEffect>
       </section>
-      <section className="w-full bg-light-yellow4 py-124 px-12 lg:px-16 xl:px-135 flex flex-col gap-y-244 dark:bg-[#181A1B]">
+      <section className="w-full bg-light-yellow4 py-124 px-12 lg:px-16 2xl:px-135 flex flex-col gap-y-244 dark:bg-[#181A1B]">
         <AnimationEffect>
           <div className="w-full flex items-center gap-x-24 gap-y-[30px] flex-col-reverse l:flex-row">
             <aside className="l:flex-[0.5] flex flex-col gap-y-[30px]">
@@ -122,7 +132,7 @@ const LatestWorks = () => {
         </AnimationEffect>
       </section>{" "}
       <AnimationEffect>
-        <section className="w-full px-12 lg:px-16 xl:px-135 pt-120 pb-100 bg-light-yellow flex items-center gap-x-76 gap-y-[30px] flex-col-reverse l:flex-row dark:bg-[#202122]">
+        <section className="w-full px-12 lg:px-16 2xl:px-135 pt-120 pb-100 bg-light-yellow flex items-center gap-x-76 gap-y-[30px] flex-col-reverse l:flex-row dark:bg-[#202122]">
           <aside className="l:flex-[0.5] flex flex-col gap-y-[30px]">
             <div className="flex flex-col items-center">
               <img src={kloftImage} alt="" />
@@ -156,7 +166,7 @@ const LatestWorks = () => {
         </section>{" "}
       </AnimationEffect>
       <AnimationEffect>
-        <section className="w-full bg-light-yellow4 flex items-center gap-y-[30px] flex-col l:flex-row pt-78 pb-88 px-12 lg:px-16 xl:px-135 gap-x-55 dark:bg-[#181A1B]">
+        <section className="w-full bg-light-yellow4 flex items-center gap-y-[30px] flex-col l:flex-row pt-78 pb-88 px-12 lg:px-16 2xl:px-135 gap-x-55 dark:bg-[#181A1B]">
           <aside className="flex-[0.5]">
             <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
               prepbook
@@ -188,118 +198,133 @@ const LatestWorks = () => {
           </aside>
         </section>
       </AnimationEffect>
-      <AnimationEffect>
-        <section className="w-full bg-white flex items-center gap-y-[30px] flex-col-reverse l:flex-row pt-115 pb-93 px-12 lg:px-16 xl:px-135 gap-x-120 dark:bg-[#181A1B]">
-          <aside className="flex-[0.5]">
-            <img src={voixoutImage} alt="" />
-            <div className="pt-[30px]">
-              <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-                <a
-                  href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=21%3A24033&node-id=21%3A25767&viewport=241%2C48%2C0.06&scaling=min-zoom&starting-point-node-id=21%3A26243"
-                  target="_blank"
-                >
-                  view snippets
-                </a>
-              </button>
-            </div>
-          </aside>
-          <aside className="flex-[0.5]">
-            <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
-              voixout
-            </h3>
-            <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 sm:leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
-              Voixout - A Freedom Social Media App
-            </h4>
-            <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
-              Voixout is a smart development platform that empowers users with
-              undiluted free speech and expression of one’s beliefs, emotions,
-              preferences and rights towards establishment of a desirable
-              collective change.
-            </p>
-            <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-              <a
-                href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=21%3A24033&node-id=21%3A25767&viewport=241%2C48%2C0.06&scaling=min-zoom&starting-point-node-id=21%3A26243"
-                target="_blank"
-              >
-                view snippets
-              </a>
-            </button>
-          </aside>
-        </section>{" "}
-      </AnimationEffect>
-      <AnimationEffect>
-        <section className="w-full bg-blue-2 flex items-center gap-y-[30px] flex-col l:flex-row py-120 px-12 lg:px-16 xl:px-135 gap-x-120 dark:bg-[#1A1D1A]">
-          <aside className="flex-[0.5]">
-            <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
-              woozee
-            </h3>
-            <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
-              Have fun | Make money | Give back
-            </h4>
-            <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
-              Woozeee is a lifestyle platform that combines the power of a
-              social media daily challenge, live movies watching, ecommerce
-              marketplace to create an all-time experience like no other.
-            </p>
-            <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-              <a href="https://bit.ly/41QUgg1" target="_blank">
-                view snippets
-              </a>
-            </button>
-          </aside>
+      {<div
+        className="flex l:hidden items-center gap-x-[17px] px-12 lg:px-16 2xl:px-135"
+        onClick={toggleView}
+      >
+        <p className="text-[#EF6D58] text-base leading-7">
+          {!viewMore ? "View more projects" : "View less projects"}
+        </p>
+        <span>
+          <img src={chevronDown} alt="" />
+        </span>
+      </div>}
+      {viewMore && (
+        <>
+          <AnimationEffect>
+            <section className="w-full bg-white flex items-center gap-y-[30px] flex-col-reverse l:flex-row pt-115 pb-93 px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#181A1B]">
+              <aside className="flex-[0.5]">
+                <img src={voixoutImage} alt="" />
+                <div className="pt-[30px]">
+                  <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+                    <a
+                      href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=21%3A24033&node-id=21%3A25767&viewport=241%2C48%2C0.06&scaling=min-zoom&starting-point-node-id=21%3A26243"
+                      target="_blank"
+                    >
+                      view snippets
+                    </a>
+                  </button>
+                </div>
+              </aside>
+              <aside className="flex-[0.5]">
+                <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
+                  voixout
+                </h3>
+                <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 sm:leading-48 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
+                  Voixout - A Freedom Social Media App
+                </h4>
+                <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
+                  Voixout is a smart development platform that empowers users
+                  with undiluted free speech and expression of one’s beliefs,
+                  emotions, preferences and rights towards establishment of a
+                  desirable collective change.
+                </p>
+                <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+                  <a
+                    href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=21%3A24033&node-id=21%3A25767&viewport=241%2C48%2C0.06&scaling=min-zoom&starting-point-node-id=21%3A26243"
+                    target="_blank"
+                  >
+                    view snippets
+                  </a>
+                </button>
+              </aside>
+            </section>{" "}
+          </AnimationEffect>
+          <AnimationEffect>
+            <section className="w-full bg-blue-2 flex items-center gap-y-[30px] flex-col l:flex-row py-120 px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#1A1D1A]">
+              <aside className="flex-[0.5]">
+                <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
+                  woozee
+                </h3>
+                <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
+                  Have fun | Make money | Give back
+                </h4>
+                <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
+                  Woozeee is a lifestyle platform that combines the power of a
+                  social media daily challenge, live movies watching, ecommerce
+                  marketplace to create an all-time experience like no other.
+                </p>
+                <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+                  <a href="https://bit.ly/41QUgg1" target="_blank">
+                    view snippets
+                  </a>
+                </button>
+              </aside>
 
-          <aside className="flex-[0.5]">
-            <img src={woozeeImage} alt="" />
-            <div className="pt-[30px]">
-              <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-                <a href="https://bit.ly/41QUgg1" target="_blank">
-                  view snippets
-                </a>
-              </button>
-            </div>
-          </aside>
-        </section>{" "}
-      </AnimationEffect>
-      <AnimationEffect>
-        <section className="w-full bg-light-yellow4 flex items-center py-120 gap-y-[30px] flex-col-reverse l:flex-row px-12 lg:px-16 xl:px-135 gap-x-120 dark:bg-[#181A1B]">
-          <aside className="flex-[0.5]">
-            <img src={realproImage} alt="" />
-            <div className="py-[30px]">
-              <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-                <a
-                  href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=19%3A9839&amp%3Bnode-id=20%3A15159&amp%3Bviewport=241%2C48%2C0.04&amp%3Bscaling=min-zoom&amp%3Bstarting-point-node-id=20%3A15159&node-id=1%3A33331&starting-point-node-id=1%3A33331"
-                  target="_blank"
-                >
-                  view snippets
-                </a>
-              </button>
-            </div>
-          </aside>
+              <aside className="flex-[0.5]">
+                <img src={woozeeImage} alt="" />
+                <div className="pt-[30px]">
+                  <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+                    <a href="https://bit.ly/41QUgg1" target="_blank">
+                      view snippets
+                    </a>
+                  </button>
+                </div>
+              </aside>
+            </section>{" "}
+          </AnimationEffect>
+          <AnimationEffect>
+            <section className="w-full bg-light-yellow4 flex items-center py-120 gap-y-[30px] flex-col-reverse l:flex-row px-12 lg:px-16 2xl:px-135 gap-x-120 dark:bg-[#181A1B]">
+              <aside className="flex-[0.5]">
+                <img src={realproImage} alt="" />
+                <div className="py-[30px]">
+                  <button className="l:hidden w-154 h-48 rounded-md bg-orange-1 inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+                    <a
+                      href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=19%3A9839&amp%3Bnode-id=20%3A15159&amp%3Bviewport=241%2C48%2C0.04&amp%3Bscaling=min-zoom&amp%3Bstarting-point-node-id=20%3A15159&node-id=1%3A33331&starting-point-node-id=1%3A33331"
+                      target="_blank"
+                    >
+                      view snippets
+                    </a>
+                  </button>
+                </div>
+              </aside>
 
-          <aside className="flex-[0.5]">
-            <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
-              realpro
-            </h3>
-            <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
-              A COMMUNITY OF HOME SEEKERS & SELLERS
-            </h4>
-            <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
-              RealPro creates a convenience for buyers, tenants, landlords
-              business owners and browsers interested in immovable property, and
-              collect content in the form of advertisements from private
-              sellers.
-            </p>
-            <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-              <a
-                href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=19%3A9839&amp%3Bnode-id=20%3A15159&amp%3Bviewport=241%2C48%2C0.04&amp%3Bscaling=min-zoom&amp%3Bstarting-point-node-id=20%3A15159&node-id=1%3A33331&starting-point-node-id=1%3A33331"
-                target="_blank"
-              >
-                view snippets
-              </a>
-            </button>
-          </aside>
-        </section>{" "}
-      </AnimationEffect>
+              <aside className="flex-[0.5]">
+                <h3 className="tracking-3 uppercase text-orange-1 font-semibold">
+                  realpro
+                </h3>
+                <h4 className="text-[32px] leading-[44px] sm:text-4xl md:text-40 text-brown font-extrabold pt-17 dark:text-[#DBD9D5]">
+                  A COMMUNITY OF HOME SEEKERS & SELLERS
+                </h4>
+                <p className="line-clamp-3 l:line-clamp-none text-brown text-base font-normal leading-8 pt-22 pb-4 dark:text-[#E3E2E0]">
+                  RealPro creates a convenience for buyers, tenants, landlords
+                  business owners and browsers interested in immovable property,
+                  and collect content in the form of advertisements from private
+                  sellers.
+                </p>
+                <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
+                  <a
+                    href="https://www.figma.com/proto/3uPQ6i2jRPrSFh1i6nv1ik/Portfolio?page-id=19%3A9839&amp%3Bnode-id=20%3A15159&amp%3Bviewport=241%2C48%2C0.04&amp%3Bscaling=min-zoom&amp%3Bstarting-point-node-id=20%3A15159&node-id=1%3A33331&starting-point-node-id=1%3A33331"
+                    target="_blank"
+                  >
+                    view snippets
+                  </a>
+                </button>
+              </aside>
+            </section>{" "}
+          </AnimationEffect>
+        </>
+      )}
     </main>
   );
 };

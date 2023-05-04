@@ -7,7 +7,7 @@ import instagramIcon from "../assets/images/instagram-icon.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full px-12 lg:px-16 xl:px-135 pt-132 dark:bg-[#181A1B]">
+    <div className="w-full px-12 lg:px-16 2xl:px-135 pt-132 dark:bg-[#181A1B]">
       <div className="w-full flex  items-center flex-col justify-center text-center gap-y-[58px] l:justify-between l:items-start l:flex-row">
         <div className="hidden l:block">
           <img src={headerIcon} alt="" />
