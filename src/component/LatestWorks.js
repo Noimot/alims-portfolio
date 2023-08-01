@@ -46,8 +46,8 @@ const LatestWorks = () => {
                 merchants and riders interelating at the same time.
               </p>
               <button className="hidden w-154 h-48 rounded-md bg-orange-1 l:inline-block text-white text-sm font-semibold leading-14 capitalize hover:bg-orange-3">
-                <a href="https://www.jeetar.com/" target="_blank">
-                  view site
+                <a href="https://www.behance.net/gallery/176213057/Jeetar-ecommerce-product-case-study" target="_blank">
+                  view case study
                 </a>
               </button>
             </aside>
